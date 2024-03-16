@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<!-- saved from url=(0108)https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+<style id="litespeed-ccss">.wp-block-image{margin:0 0 1em}.wp-block-image img{max-width:100%}.wp-block-image:not(.is-style-rounded) img{border-radius:inherit}.wp-block-image .aligncenter{display:table}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image figure{margin:0}.aligncenter{clear:both}.sg-hide-element{display:none}.sgpb-alert{padding:15px;border:1px solid transparent;border-radius:4px;text-align:center}.sgpb-alert-info{color:#31708f;background-color:#d9edf7;border-color:#bce8f1}.sgpb-alert-success{color:#3c763d;background-color:#dff0d8;border-color:#d6e9c6}.sgpb-alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}.sgpb-alert p{margin-bottom:0}.sgpb-form-wrapper label{margin:0;border:0;padding:0;display:inline-block;vertical-align:middle;white-space:normal;line-height:1;max-width:100%!important;font-size:13px;font-family:Arial}.sgpb-form-wrapper input,.sgpb-form-wrapper label{background:0 0;outline:none}.sgpb-form-wrapper input[type=checkbox]{width:13px;height:13px}.sgpb-form-wrapper input[type=text]{max-width:100%!important;padding:0 10px!important;box-sizing:border-box;font-size:14px!important;box-shadow:none!important;margin:5px auto!important;display:inline-block!important;font-weight:700!important;background-image:none!important;line-height:normal!important}.sg-js-hide{display:none}.sgpb-form-wrapper input[type=checkbox]:after{content:none}.sgpb-form-wrapper input{padding:inherit!important;border:1px solid #ccc;margin-bottom:10px;width:100%;box-sizing:border-box;font-family:Arial;color:#2c3e50;font-size:13px}.sgpb-form-wrapper input[type=text]{border:2px solid}#sgpb-gdpr-field-label{margin:4px 0 0;max-width:5%!important;font-weight:700}.sgpb-gdpr-label-wrapper{margin:0 auto!important;text-align:left!important}#sgpb-gdpr-field-label+label{margin:4px 0 0 5px;width:80%!important;text-align:left!important}.sgpb-gdpr-info{margin-bottom:0;margin-top:5px;text-align:left;border:none;background:0 0;padding:0;display:inline-block;overflow-wrap:break-word;line-height:1.4em;font-size:13px;font-family:BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif}*{margin:0;padding:0;box-sizing:border-box}body{margin:0;padding:0}img{max-width:100%;height:auto;object-fit:contain}h1{margin:5px 0}p{margin:0;margin-bottom:20px;overflow-wrap:break-word}ul li{overflow-wrap:break-word}a{text-decoration:none}header{z-index:999}header label{display:none}footer p{font-size:16px!important}input:not([type=submit]):not([type=radio]):not([type=checkbox]):not([type=file]),textarea{padding:.5rem .6rem;font-size:1.1rem;outline:0}input:not([type=submit]):not([type=radio]):not([type=checkbox]):not([type=file]),textarea{display:inline-block;width:100%;padding:.5rem .75rem;-webkit-box-shadow:inset 0 1px 3px #f6f6f7;box-shadow:inset 0 1px 3px #f6f6f7;background-color:#fff;border-radius:2px}input,textarea{font-family:inherit;font-size:inherit;line-height:inherit;outline:0}figure{margin:0}figure{display:inline-block}figure img{margin-bottom:.5rem;line-height:1}i{font-style:italic}.aligncenter{clear:both;display:block;margin-left:auto;margin-right:auto}.site-header{width:100%;margin-bottom:8px;width:100%;z-index:999;opacity:1;min-height:56px}.site-header-content{margin:0 auto;position:relative;display:flex;align-items:center;justify-content:space-between}.site-name{display:inline-block;line-height:56px}.site-header .sub-menu a{color:#222!important}.site-name{font-size:1.25rem}.content-single{flex-wrap:wrap}.content-single{margin:0 auto;position:relative}.primary-sidebar{padding:0 0 2%;margin-top:1rem;vertical-align:top;display:inline-block}.asap-columns-1{width:100%;flex-basis:100%;max-width:100%}.article-loop{text-align:left}.article-loop{padding:0 .625rem 2rem}.article-loop{display:inline-block;vertical-align:top}.last-post-sidebar{margin-bottom:1rem!important}.article-loop p,.last-post-sidebar p{padding-left:10px;padding-right:10px}.article-loop p,.last-post-sidebar p{line-height:1.4;text-align:center}.article-content{display:block;margin-bottom:10px!important;position:relative;line-height:0;text-align:center}.article-image{height:196px;overflow:hidden;background-position:center center;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;-webkit-transform-origin:center bottom!important;-ms-transform-origin:center bottom!important;-moz-transform-origin:center bottom!important;-o-transform-origin:center bottom!important;transform-origin:center bottom!important;width:100%;position:relative}.last-post-sidebar .article-image{height:140px;margin-bottom:8px}.last-post-sidebar article{margin:0 0 .75rem 0!important;padding:0!important}.the-content{margin-bottom:1.5rem}.the-content ul{margin:0 0 20px;font-size:18px;color:#222!important}.the-content ul{list-style:disc}.asap-icon-single{color:#fff!important;display:inline-block;text-align:center}.asap-icon-single{margin:0;margin-right:7px;padding:.75rem;display:flex;align-items:center;justify-content:center}.icon-facebook{background:#3b5998}.icon-twitter{background:#00acee}.icon-linkedin{background:#0e76a8}.icon-email{background:#666}.icon-telegram{background:#08c}.icon-linkedin{background:#2867b2}.social-buttons{margin-top:.5rem;margin-bottom:1.5rem;width:100%;position:relative;overflow-x:auto}.social-buttons.flexbox{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;display:inline-flex}.asap-icon-single svg{width:24px;height:24px}.asap-icon-single svg{stroke:#fff;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.social-fix{position:fixed;left:0;bottom:0;z-index:999;display:flex;width:100%}.social-fix .social-buttons{margin:0}.social-fix .asap-icon-single{flex:auto;margin:0}ul.breadcrumb{list-style:none}.breadcrumb li{display:inline}.breadcrumb li:nth-child(2),.breadcrumb li:nth-child(4){margin:0 4px}.footer-breadcrumb .breadcrumb{padding:10px;border-top:1px solid #eee}.go-top{display:none;height:45px;width:45px;line-height:40px;text-align:center;border-radius:100px;font-size:30px;position:fixed;bottom:20px;right:20px}.go-top>span{display:none}.arrow{border:solid #fff;border-width:0 2px 2px 0;display:inline-block;padding:4px}.arrow-up{transform:rotate(-135deg);-webkit-transform:rotate(-135deg)}.content-author p{margin:0!important;padding:0;color:#999;line-height:1.4}.content-author{clear:both;margin:10px 0;overflow:hidden}.author-image{float:left;height:36px;width:36px}.author-image img{border-radius:80px}.author-desc{float:left;margin-left:10px;padding-left:6px;width:calc(100% - 50px)}.author-desc p{font-size:13px}.primary-sidebar div{margin-bottom:2rem}.the-content .post-index{background:#fafafa;border:1px solid #ddd;padding:20px;margin-top:24px;padding-right:44px;position:relative}.the-content .post-index span{display:block}.the-content .post-index ul{margin-bottom:0}.the-content .post-index #index-table{margin-top:18px}.the-content .post-index .btn-show{display:inline-block!important}.the-content .post-index .btn-show{position:absolute!important;right:2.85rem}.the-content .post-index .checkbox input{position:absolute;opacity:0}.the-content .post-index .checkbox .check-table{position:absolute;height:26px;width:26px}.the-content .post-index .checkbox .check-table svg{width:26px;height:26px;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}.content-footer p{color:#fff}.content-footer .widget-content-footer .widget-title{font-weight:700;text-transform:uppercase}#commentform input,#commentform textarea{margin-top:15px}#commentform input,#commentform textarea{border-radius:2px;outline:0}#commentform textarea{resize:none}.comment-form-cookies-consent{display:none}.comment-notes{display:none}#btn-menu{display:none}#menu{-webkit-touch-callout:none;z-index:100;position:relative;display:inline-block}#menu ul,#menu ul li{list-style:none;padding:0;margin:0;box-sizing:border-box}#menu ul a{text-decoration:none}#menu>ul{padding:0;margin:0;position:relative}#menu>ul>li{display:inline-block;text-align:left;line-height:56px;padding:0;width:auto}#menu ul>li ul>li{margin:0;padding:0;box-sizing:border-box;line-height:1.8}#menu>ul>li>ul{position:absolute;width:auto}#menu>ul>li ul>li{position:relative;width:100%}#menu ul>li ul{background-color:#fff;right:0}#menu ul .menu-item-has-children{position:relative}#menu>ul .menu-item-has-children:before{right:25.5px}.circle{width:28px;height:28px;position:relative}.line{position:absolute;height:2px;width:100%;border-radius:8px}.top{top:18%}.middle{top:48%}.bottom{top:78%}@media (max-width:1050px){#menu ul{min-height:auto!important}#menu{height:100%;width:100%;position:fixed;left:0;transform:translateX(-100%);background:#f9f9f9;overflow:auto!important;padding-bottom:56px}#menu>ul{width:100%}#menu>ul>li{width:100%;display:inline-table;background-color:#f9f9f9}#menu>ul>li>a{padding:0 10px 0 20px}#menu>ul>li ul{position:relative!important;max-height:0;overflow:hidden}#menu>ul>li ul *{padding:0;margin:0}#menu>ul>li>ul{top:0}#menu ul>li ul>li>a{padding:0 10px}#menu ul>li ul>li{line-height:40px}#menu ul>li ul>li:last-child{border-bottom:none}#menu>ul{font-size:18px}#menu ul li.menu-item-has-children a{width:70%;display:inline-block}#menu ul li ul{background:#fff}#menu ul li ul li:first-child{padding-top:14px}#menu ul li ul li:last-child{padding-bottom:14px}#menu ul>.menu-item-has-children:before{content:"";border:solid #282828;border-width:0 2px 2px 0;display:inline-block;padding:4px;-webkit-transform:rotate(45deg);transform:rotate(45deg);position:absolute;top:1px;right:28px;top:21px}#menu ul>.menu-item-has-children li{padding:2px 0 2px 30px}}@media (min-width:1050px){#menu>ul{text-align:right!important}#menu ul>li ul{padding:12px 8px;margin:0}#menu>ul li ul a{display:block;width:100%}#menu>ul>li{line-height:56px;margin:0 0 0 30px}#menu ul>li ul{width:16rem;left:initial;bottom:initial;visibility:hidden;display:none;opacity:0;z-index:-1;position:absolute;box-shadow:0 0 30px -5px rgba(23,50,70,.9);box-sizing:border-box;margin-top:-8px}#menu ul>li ul a{display:block}#menu ul>li ul>li{float:left}#menu ul>li ul>li a{padding:7px 20px 7px 14px}#menu ul>li ul>li:last-child{border-bottom:none}#menu ul>li>ul{z-index:9}#menu ul .menu-item-has-children:after{content:"";display:inline-block;padding:3px;-webkit-transform:rotate(45deg);transform:rotate(45deg);position:relative;top:-3px}#menu ul .menu-item-has-children a{padding-right:.5rem}}@media (min-width:768px) and (max-width:1050px){.content-thin{padding-left:1rem}.primary-sidebar{padding-right:1rem}}@media (min-width:1050px){.social-fix{display:none}.site-header{position:sticky;top:0}.content-single{display:flex}.primary-sidebar{margin-left:5%}.content-single,.site-header-content{padding-left:1rem;padding-right:1rem}.sticky{position:sticky;top:82px}.footer-breadcrumb .breadcrumb{display:none}}@media (max-width:1050px){body,html{margin:0;height:100%}.site-header{position:fixed}header label{display:block;height:56px;line-height:56px;padding:12px 20px 0}header #menu a{display:block;color:#222!important}.content-single{display:block}.last-post-sidebar .article-image{height:150px!important}.go-top{width:100%;position:relative;display:block;border-radius:0!important;bottom:auto;right:auto}.go-top>span{display:inline;margin-right:10px;font-size:1.2rem}.site-name{padding:0 1rem}.content-thin,.primary-sidebar{width:100%!important;padding:0 1rem 1rem 1rem!important;margin:0 auto;display:block}.content-single{padding-top:4rem}.content-thin>.breadcrumb{display:none}}@media (max-width:480px){.article-image{height:180px}.last-post-sidebar{padding:0 1rem}.article-loop{padding:0 0 1.25rem}}body{font-family:'Maven Pro',sans-serif!important;background:#fff;font-weight:400!important}h1{font-family:'Montserrat',sans-serif!important;font-weight:400;line-height:1.3}h1{color:#222}.article-loop p,.last-post-sidebar p{font-family:'Maven Pro',sans-serif!important;font-size:18px!important;font-weight:400!important}a{color:#2e86c1}.the-content .post-index span{font-size:18px}p{color:#222;font-size:18px;line-height:1.6}.breadcrumb span{color:#222}#commentform input,#commentform textarea{font-size:calc(18px - 2px)}.breadcrumb a,.breadcrumb span{font-size:calc(18px - 5px)}.content-footer p{font-size:calc(18px - 4px)!important}h1{font-size:38px}.site-header{background:#355070}#commentform input,#commentform textarea{border:2px solid #355070;font-weight:400!important}.site-header-content{max-width:980px}.content-single{max-width:1300px}.go-top{background:#355070;color:#fff}.site-header a,.content-footer p,header,header label{color:#fff}header .line{background:#fff}.primary-sidebar{width:316px}.the-content .post-index{border-top:2px solid #355070}.the-content .post-index .btn-show{font-size:calc(18px - 3px)!important}.checkbox .check-table svg{stroke:#355070}.article-content{height:196px}.last-post-sidebar .article-content{height:140px;margin-bottom:8px}@media (max-width:1050px){.last-post-sidebar .article-content{height:150px!important}}@media (max-width:480px){.article-content{height:180px}}strong{font-weight:700}.the-content .post-index #index-table{display:none}@media (max-width:480px){h1{font-size:calc(38px - 8px)}}@media (min-width:1050px){.content-thin{width:calc(95% - 316px)}#menu>ul{font-size:calc(18px - 2px)}#menu ul .menu-item-has-children:after{border:solid #fff;border-width:0 2px 2px 0}}.article-loop p{text-align:left!important;margin-bottom:8px!important;padding:0 10px 0 0!important}.last-post-sidebar .article-loop p{margin-bottom:20px!important}@media (min-width:800px){.article-loop{margin-bottom:1rem!important}}.sticky{top:22px!important}header{position:relative!important}@media (max-width:1050px){.content-single{padding-top:0!important}}@media (max-width:1050px){header label{width:64px;height:64px;position:fixed;padding:0;right:1.5rem;bottom:4rem;border-radius:50%;-webkit-box-shadow:0px 4px 8px 0px rgba(0,0,0,.5);box-shadow:0px 4px 8px 0px rgba(0,0,0,.5);background-color:#fff;z-index:101;display:flex;align-items:center}.site-header-content{justify-content:center}.line{background:#282828!important}.circle{margin:0 auto;width:24px;height:24px}#menu{top:0;margin-top:0}}.content-footer p{margin-bottom:0!important}.content-footer .widget-title{display:none}.sgpb-subs-form-1398 .js-subs-text-inputs::-webkit-input-placeholder{color:#ccc;font-weight:lighter}.sgpb-subs-form-1398 .js-subs-text-inputs::-moz-placeholder{color:#ccc;font-weight:lighter}.sgpb-subs-form-1398 .js-subs-text-inputs:-ms-input-placeholder{color:#ccc;font-weight:lighter}.sgpb-subs-form-1398 .js-subs-text-inputs:-moz-placeholder{color:#ccc;font-weight:lighter}.sgpb-subs-form-1398 input[type=checkbox]{-webkit-appearance:checkbox;!important}.sgpb-subs-form-1398 input[type=checkbox]:before{content:none!important}</style><script src="./ejecucion_diaria_py_files/f(5).txt"></script><script src="./ejecucion_diaria_py_files/f(6).txt"></script><script>!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Cómo ejecutar scripts Python automáticamente todos los días en Windows - Mi Diario Python</title>
+	<meta name="description" content="En esta publicación les mostraré cómo programar la ejecución de un script Python en el Programador de tareas (Task Scheduler) de Windows.">
+	<link rel="canonical" href="https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html">
+	<meta property="og:locale" content="es_ES">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Cómo ejecutar scripts Python automáticamente todos los días en Windows - Mi Diario Python">
+	<meta property="og:description" content="En esta publicación les mostraré cómo programar la ejecución de un script Python en el Programador de tareas (Task Scheduler) de Windows.">
+	<meta property="og:url" content="https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html">
+	<meta property="og:site_name" content="Mi Diario Python">
+	<meta property="article:publisher" content="https://www.facebook.com/PythonDiario/">
+	<meta property="article:author" content="https://www.facebook.com/PythonDiario/">
+	<meta property="article:published_time" content="2021-02-18T18:35:05+00:00">
+	<meta property="article:modified_time" content="2021-03-25T17:54:14+00:00">
+	<meta property="og:image" content="https://pythondiario.com/wp-content/uploads/2021/02/fc1586f1-6c7e-414e-9f63-cbf8e431a688.jpg">
+	<meta property="og:image:width" content="439">
+	<meta property="og:image:height" content="262">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta name="author" content="dcaraballo">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@https://twitter.com/DiePyCar">
+	<meta name="twitter:site" content="@DiePyCar">
+	<meta name="twitter:label1" content="Escrito por">
+	<meta name="twitter:data1" content="dcaraballo">
+	<meta name="twitter:label2" content="Tiempo de lectura">
+	<meta name="twitter:data2" content="4 minutos">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#article","isPartOf":{"@id":"https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html"},"author":{"name":"dcaraballo","@id":"https://pythondiario.com/#/schema/person/ce605f4288027ae242e996aae7adcbf7"},"headline":"Cómo ejecutar scripts Python automáticamente todos los días en Windows","datePublished":"2021-02-18T18:35:05+00:00","dateModified":"2021-03-25T17:54:14+00:00","mainEntityOfPage":{"@id":"https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html"},"wordCount":554,"commentCount":1,"publisher":{"@id":"https://pythondiario.com/#/schema/person/ce605f4288027ae242e996aae7adcbf7"},"image":{"@id":"https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#primaryimage"},"thumbnailUrl":"https://pythondiario.com/wp-content/uploads/2021/02/fc1586f1-6c7e-414e-9f63-cbf8e431a688.jpg","keywords":["automatizar","script","windows"],"articleSection":["Automatizacion"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#respond"]}]},{"@type":"WebPage","@id":"https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html","url":"https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html","name":"Cómo ejecutar scripts Python automáticamente todos los días en Windows - Mi Diario Python","isPartOf":{"@id":"https://pythondiario.com/#website"},"primaryImageOfPage":{"@id":"https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#primaryimage"},"image":{"@id":"https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#primaryimage"},"thumbnailUrl":"https://pythondiario.com/wp-content/uploads/2021/02/fc1586f1-6c7e-414e-9f63-cbf8e431a688.jpg","datePublished":"2021-02-18T18:35:05+00:00","dateModified":"2021-03-25T17:54:14+00:00","description":"En esta publicación les mostraré cómo programar la ejecución de un script Python en el Programador de tareas (Task Scheduler) de Windows.","breadcrumb":{"@id":"https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#primaryimage","url":"https://pythondiario.com/wp-content/uploads/2021/02/fc1586f1-6c7e-414e-9f63-cbf8e431a688.jpg","contentUrl":"https://pythondiario.com/wp-content/uploads/2021/02/fc1586f1-6c7e-414e-9f63-cbf8e431a688.jpg","width":439,"height":262,"caption":"Programador de tareas con Python"},{"@type":"WebSite","@id":"https://pythondiario.com/#website","url":"https://pythondiario.com/","name":"Mi Diario Python","description":"Blog Dedicado Al Lenguaje De Programaci&oacute;n Python. Ejercicios Paso A Paso, Libros, Tutoriales En Espa&ntilde;ol, Traducci&oacute;n De Manuales En Ingles Y Alguna Cosa Mas...","publisher":{"@id":"https://pythondiario.com/#/schema/person/ce605f4288027ae242e996aae7adcbf7"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://pythondiario.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":["Person","Organization"],"@id":"https://pythondiario.com/#/schema/person/ce605f4288027ae242e996aae7adcbf7","name":"dcaraballo","image":{"@type":"ImageObject","inLanguage":"es","@id":"https://pythondiario.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/7211138e01d1efb9f138dc630e567ba6?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/7211138e01d1efb9f138dc630e567ba6?s=96&d=mm&r=g","caption":"dcaraballo"},"logo":{"@id":"https://pythondiario.com/#/schema/person/image/"},"description":"Creador de @PythonDiario, amante de la Tecnología y la Naturaleza. Programador Python, C# . NET","sameAs":["https://pythondiario.com","https://www.facebook.com/PythonDiario/","https://www.instagram.com/midiariopython/","https://www.linkedin.com/in/diego-caraballo-336a62ba/","https://twitter.com/https://twitter.com/DiePyCar"],"url":"https://pythondiario.com/author/dcaraballo"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="alternate" type="application/rss+xml" title="Mi Diario Python » Feed" href="https://pythondiario.com/feed">
+<link rel="alternate" type="application/rss+xml" title="Mi Diario Python » Feed de los comentarios" href="https://pythondiario.com/comments/feed">
+<link rel="alternate" type="application/rss+xml" title="Mi Diario Python » Comentario Cómo ejecutar scripts Python automáticamente todos los días en Windows del feed" href="https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html/feed">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.23.1 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="./ejecucion_diaria_py_files/js" data-cfasync="false" data-wpfc-render="false" type="text/javascript" async=""></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '8.23.1';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStrs = [
+										'ga-disable-G-QT363XM2G2',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+										__gtagTracker('config', 'G-QT363XM2G2', {"forceSSL":"true","link_attribution":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<!-- pythondiario.com is managing ads with Advanced Ads 1.51.2 --><script id="pytho-ready">
+			window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];		</script>
+		<link data-optimized="1" data-asynced="1" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" rel="stylesheet" id="wp-block-library-css" href="./ejecucion_diaria_py_files/69ec2fb91657c145b18f5f59eba72e9f.css" type="text/css" media="all"><noscript><link data-optimized="1" rel='stylesheet' href='https://pythondiario.com/wp-content/litespeed/css/69ec2fb91657c145b18f5f59eba72e9f.css?ver=0c395' type='text/css' media='all' /></noscript>
+<style id="classic-theme-styles-inline-css" type="text/css">/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style>
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black:#000;--wp--preset--color--cyan-bluish-gray:#abb8c3;--wp--preset--color--white:#fff;--wp--preset--color--pale-pink:#f78da7;--wp--preset--color--vivid-red:#cf2e2e;--wp--preset--color--luminous-vivid-orange:#ff6900;--wp--preset--color--luminous-vivid-amber:#fcb900;--wp--preset--color--light-green-cyan:#7bdcb5;--wp--preset--color--vivid-green-cyan:#00d084;--wp--preset--color--pale-cyan-blue:#8ed1fc;--wp--preset--color--vivid-cyan-blue:#0693e3;--wp--preset--color--vivid-purple:#9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple:linear-gradient(135deg,rgba(6,147,227,1) 0%,#9b51e0 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:linear-gradient(135deg,#7adcb4 0%,#00d082 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:linear-gradient(135deg,rgba(255,105,0,1) 0%,#cf2e2e 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:linear-gradient(135deg,#eee 0%,#a9b8c3 100%);--wp--preset--gradient--cool-to-warm-spectrum:linear-gradient(135deg,#4aeadc 0%,#9778d1 20%,#cf2aba 40%,#ee2c82 60%,#fb6962 80%,#fef84c 100%);--wp--preset--gradient--blush-light-purple:linear-gradient(135deg,#ffceec 0%,#9896f0 100%);--wp--preset--gradient--blush-bordeaux:linear-gradient(135deg,#fecda5 0%,#fe2d2d 50%,#6b003e 100%);--wp--preset--gradient--luminous-dusk:linear-gradient(135deg,#ffcb70 0%,#c751c0 50%,#4158d0 100%);--wp--preset--gradient--pale-ocean:linear-gradient(135deg,#fff5cb 0%,#b6e3d4 50%,#33a7b5 100%);--wp--preset--gradient--electric-grass:linear-gradient(135deg,#caf880 0%,#71ce7e 100%);--wp--preset--gradient--midnight:linear-gradient(135deg,#020381 0%,#2874fc 100%);--wp--preset--font-size--small:13px;--wp--preset--font-size--medium:20px;--wp--preset--font-size--large:36px;--wp--preset--font-size--x-large:42px;--wp--preset--spacing--20:.44rem;--wp--preset--spacing--30:.67rem;--wp--preset--spacing--40:1rem;--wp--preset--spacing--50:1.5rem;--wp--preset--spacing--60:2.25rem;--wp--preset--spacing--70:3.38rem;--wp--preset--spacing--80:5.06rem;--wp--preset--shadow--natural:6px 6px 9px rgba(0,0,0,.2);--wp--preset--shadow--deep:12px 12px 50px rgba(0,0,0,.4);--wp--preset--shadow--sharp:6px 6px 0px rgba(0,0,0,.2);--wp--preset--shadow--outlined:6px 6px 0px -3px rgba(255,255,255,1),6px 6px rgba(0,0,0,1);--wp--preset--shadow--crisp:6px 6px 0px rgba(0,0,0,1)}:where(.is-layout-flex){gap:.5em}:where(.is-layout-grid){gap:.5em}body .is-layout-flow>.alignleft{float:left;margin-inline-start:0;margin-inline-end:2em}body .is-layout-flow>.alignright{float:right;margin-inline-start:2em;margin-inline-end:0}body .is-layout-flow>.aligncenter{margin-left:auto !important;margin-right:auto !important}body .is-layout-constrained>.alignleft{float:left;margin-inline-start:0;margin-inline-end:2em}body .is-layout-constrained>.alignright{float:right;margin-inline-start:2em;margin-inline-end:0}body .is-layout-constrained>.aligncenter{margin-left:auto !important;margin-right:auto !important}body .is-layout-constrained>:where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:var(--wp--style--global--content-size);margin-left:auto !important;margin-right:auto !important}body .is-layout-constrained>.alignwide{max-width:var(--wp--style--global--wide-size)}body .is-layout-flex{display:flex}body .is-layout-flex{flex-wrap:wrap;align-items:center}body .is-layout-flex>*{margin:0}body .is-layout-grid{display:grid}body .is-layout-grid>*{margin:0}:where(.wp-block-columns.is-layout-flex){gap:2em}:where(.wp-block-columns.is-layout-grid){gap:2em}:where(.wp-block-post-template.is-layout-flex){gap:1.25em}:where(.wp-block-post-template.is-layout-grid){gap:1.25em}.has-black-color{color:var(--wp--preset--color--black) !important}.has-cyan-bluish-gray-color{color:var(--wp--preset--color--cyan-bluish-gray) !important}.has-white-color{color:var(--wp--preset--color--white) !important}.has-pale-pink-color{color:var(--wp--preset--color--pale-pink) !important}.has-vivid-red-color{color:var(--wp--preset--color--vivid-red) !important}.has-luminous-vivid-orange-color{color:var(--wp--preset--color--luminous-vivid-orange) !important}.has-luminous-vivid-amber-color{color:var(--wp--preset--color--luminous-vivid-amber) !important}.has-light-green-cyan-color{color:var(--wp--preset--color--light-green-cyan) !important}.has-vivid-green-cyan-color{color:var(--wp--preset--color--vivid-green-cyan) !important}.has-pale-cyan-blue-color{color:var(--wp--preset--color--pale-cyan-blue) !important}.has-vivid-cyan-blue-color{color:var(--wp--preset--color--vivid-cyan-blue) !important}.has-vivid-purple-color{color:var(--wp--preset--color--vivid-purple) !important}.has-black-background-color{background-color:var(--wp--preset--color--black) !important}.has-cyan-bluish-gray-background-color{background-color:var(--wp--preset--color--cyan-bluish-gray) !important}.has-white-background-color{background-color:var(--wp--preset--color--white) !important}.has-pale-pink-background-color{background-color:var(--wp--preset--color--pale-pink) !important}.has-vivid-red-background-color{background-color:var(--wp--preset--color--vivid-red) !important}.has-luminous-vivid-orange-background-color{background-color:var(--wp--preset--color--luminous-vivid-orange) !important}.has-luminous-vivid-amber-background-color{background-color:var(--wp--preset--color--luminous-vivid-amber) !important}.has-light-green-cyan-background-color{background-color:var(--wp--preset--color--light-green-cyan) !important}.has-vivid-green-cyan-background-color{background-color:var(--wp--preset--color--vivid-green-cyan) !important}.has-pale-cyan-blue-background-color{background-color:var(--wp--preset--color--pale-cyan-blue) !important}.has-vivid-cyan-blue-background-color{background-color:var(--wp--preset--color--vivid-cyan-blue) !important}.has-vivid-purple-background-color{background-color:var(--wp--preset--color--vivid-purple) !important}.has-black-border-color{border-color:var(--wp--preset--color--black) !important}.has-cyan-bluish-gray-border-color{border-color:var(--wp--preset--color--cyan-bluish-gray) !important}.has-white-border-color{border-color:var(--wp--preset--color--white) !important}.has-pale-pink-border-color{border-color:var(--wp--preset--color--pale-pink) !important}.has-vivid-red-border-color{border-color:var(--wp--preset--color--vivid-red) !important}.has-luminous-vivid-orange-border-color{border-color:var(--wp--preset--color--luminous-vivid-orange) !important}.has-luminous-vivid-amber-border-color{border-color:var(--wp--preset--color--luminous-vivid-amber) !important}.has-light-green-cyan-border-color{border-color:var(--wp--preset--color--light-green-cyan) !important}.has-vivid-green-cyan-border-color{border-color:var(--wp--preset--color--vivid-green-cyan) !important}.has-pale-cyan-blue-border-color{border-color:var(--wp--preset--color--pale-cyan-blue) !important}.has-vivid-cyan-blue-border-color{border-color:var(--wp--preset--color--vivid-cyan-blue) !important}.has-vivid-purple-border-color{border-color:var(--wp--preset--color--vivid-purple) !important}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background:var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background:var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background:var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background:var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background:var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important}.has-cool-to-warm-spectrum-gradient-background{background:var(--wp--preset--gradient--cool-to-warm-spectrum) !important}.has-blush-light-purple-gradient-background{background:var(--wp--preset--gradient--blush-light-purple) !important}.has-blush-bordeaux-gradient-background{background:var(--wp--preset--gradient--blush-bordeaux) !important}.has-luminous-dusk-gradient-background{background:var(--wp--preset--gradient--luminous-dusk) !important}.has-pale-ocean-gradient-background{background:var(--wp--preset--gradient--pale-ocean) !important}.has-electric-grass-gradient-background{background:var(--wp--preset--gradient--electric-grass) !important}.has-midnight-gradient-background{background:var(--wp--preset--gradient--midnight) !important}.has-small-font-size{font-size:var(--wp--preset--font-size--small) !important}.has-medium-font-size{font-size:var(--wp--preset--font-size--medium) !important}.has-large-font-size{font-size:var(--wp--preset--font-size--large) !important}.has-x-large-font-size{font-size:var(--wp--preset--font-size--x-large) !important}.wp-block-navigation a:where(:not(.wp-element-button)){color:inherit}:where(.wp-block-post-template.is-layout-flex){gap:1.25em}:where(.wp-block-post-template.is-layout-grid){gap:1.25em}:where(.wp-block-columns.is-layout-flex){gap:2em}:where(.wp-block-columns.is-layout-grid){gap:2em}.wp-block-pullquote{font-size:1.5em;line-height:1.6}</style>
+<link data-optimized="1" data-asynced="1" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" rel="stylesheet" id="theme.css-css" href="./ejecucion_diaria_py_files/73e37874f48d05b21ead5d535b3c99ba.css" type="text/css" media="all"><noscript><link data-optimized="1" rel='stylesheet' id='theme.css-css' href='https://pythondiario.com/wp-content/litespeed/css/73e37874f48d05b21ead5d535b3c99ba.css?ver=7f3ea' type='text/css' media='all' /></noscript>
+<link data-optimized="1" data-asynced="1" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" rel="stylesheet" id="asap-style-css" href="./ejecucion_diaria_py_files/e3002c56444f1c25761561f636d7bd65.css" type="text/css" media="all"><noscript><link data-optimized="1" rel='stylesheet' href='https://pythondiario.com/wp-content/litespeed/css/e3002c56444f1c25761561f636d7bd65.css?ver=231c4' type='text/css' media='all' /></noscript>
+<link data-optimized="1" data-asynced="1" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" rel="stylesheet" id="asap-google-fonts-css" href="./ejecucion_diaria_py_files/c0e3912ce19bf686da345536c6a4ae6d.css" type="text/css" media="all"><noscript><link data-optimized="1" rel='stylesheet' href='https://pythondiario.com/wp-content/litespeed/css/c0e3912ce19bf686da345536c6a4ae6d.css?ver=4ae6d' type='text/css' media='all' /></noscript>
+<link data-optimized="1" data-asynced="1" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" rel="stylesheet" id="newsletter-css" href="./ejecucion_diaria_py_files/9d4e46bffc12095b4997eced27d3006c.css" type="text/css" media="all"><noscript><link data-optimized="1" rel='stylesheet' href='https://pythondiario.com/wp-content/litespeed/css/9d4e46bffc12095b4997eced27d3006c.css?ver=8738a' type='text/css' media='all' /></noscript>
+<script type="text/javascript" src="./ejecucion_diaria_py_files/frontend-gtag.min.js" id="monsterinsights-frontend-script-js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id="monsterinsights-frontend-script-js-extra">/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/pythondiario.com","hash_tracking":"false","v4_id":"G-QT363XM2G2"};/* ]]> */
+</script>
+<script type="text/javascript" src="./ejecucion_diaria_py_files/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="./ejecucion_diaria_py_files/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="Popup.js-js-before">
+/* <![CDATA[ */
+var sgpbPublicUrl = "https:\/\/pythondiario.com\/wp-content\/plugins\/popup-builder\/public\/";
+var SGPB_JS_LOCALIZATION = {"imageSupportAlertMessage":"Solamente es compatible con archivos de imagen","pdfSupportAlertMessage":"Solamente se admiten archivos pdf","areYouSure":"\u00bfEst\u00e1s seguro?","addButtonSpinner":"L","audioSupportAlertMessage":"Solamente es compatible con archivos de audio (por ejemplo: mp3, wav, m4a, ogg)","publishPopupBeforeElementor":"\u00a1Publica el mensaje emergente antes de empezar a usar \u00abElementor\u00bb con \u00e9l!","publishPopupBeforeDivi":"\u00a1Publica el mensaje emergente antes de empezar a usar \u00abDivi Builder\u00bb con \u00e9l!","closeButtonAltText":"Cerrar"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./ejecucion_diaria_py_files/Popup.js" id="Popup.js-js"></script>
+<script type="text/javascript" src="./ejecucion_diaria_py_files/PopupConfig.js" id="PopupConfig.js-js"></script>
+<script type="text/javascript" id="PopupBuilder.js-js-before">
+/* <![CDATA[ */
+var SGPB_POPUP_PARAMS = {"popupTypeAgeRestriction":"ageRestriction","defaultThemeImages":{"1":"https:\/\/pythondiario.com\/wp-content\/plugins\/popup-builder\/public\/img\/theme_1\/close.png","2":"https:\/\/pythondiario.com\/wp-content\/plugins\/popup-builder\/public\/img\/theme_2\/close.png","3":"https:\/\/pythondiario.com\/wp-content\/plugins\/popup-builder\/public\/img\/theme_3\/close.png","5":"https:\/\/pythondiario.com\/wp-content\/plugins\/popup-builder\/public\/img\/theme_5\/close.png","6":"https:\/\/pythondiario.com\/wp-content\/plugins\/popup-builder\/public\/img\/theme_6\/close.png"},"homePageUrl":"https:\/\/pythondiario.com\/","isPreview":false,"convertedIdsReverse":[],"dontShowPopupExpireTime":365,"conditionalJsClasses":[],"disableAnalyticsGeneral":false};
+var SGPB_JS_PACKAGES = {"packages":{"current":1,"free":1,"silver":2,"gold":3,"platinum":4},"extensions":{"geo-targeting":false,"advanced-closing":false}};
+var SGPB_JS_PARAMS = {"ajaxUrl":"https:\/\/pythondiario.com\/wp-admin\/admin-ajax.php","nonce":"45c648402f"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./ejecucion_diaria_py_files/PopupBuilder.js" id="PopupBuilder.js-js"></script>
+<link rel="https://api.w.org/" href="https://pythondiario.com/wp-json/"><link rel="alternate" type="application/json" href="https://pythondiario.com/wp-json/wp/v2/posts/1563"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://pythondiario.com/xmlrpc.php?rsd">
+
+<link rel="shortlink" href="https://pythondiario.com/?p=1563">
+<link rel="alternate" type="application/json+oembed" href="https://pythondiario.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpythondiario.com%2F2021%2F02%2Fcomo-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html">
+<link rel="alternate" type="text/xml+oembed" href="https://pythondiario.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpythondiario.com%2F2021%2F02%2Fcomo-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html&amp;format=xml">
+	
+<style>body{font-family:'Maven Pro',sans-serif !important;background:#fff;font-weight:400 !important}h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif !important;font-weight:400;line-height:1.3}h1{color:#222}h2,h5,h6{color:#222}h3{color:#222}h4{color:#222}.article-loop p,.article-loop-featured p,.article-loop h2,.article-loop h3,.article-loop h4,.article-loop span.entry-title,.related-posts p,.last-post-sidebar p,.woocommerce-loop-product__title{font-family:'Maven Pro',sans-serif !important;font-size:18px !important;font-weight:400 !important}.article-loop .show-extract p,.article-loop .show-extract span{font-family:'Maven Pro',sans-serif !important;font-weight:400 !important}a{color:#00a7e1}.the-content .post-index span,.des-category .post-index span{font-size:18px}.the-content .post-index li,.the-content .post-index a,.des-category .post-index li,.des-category .post-index a,.comment-respond>p>span>a,.asap-pros-cons-title span,.asap-pros-cons ul li span,.woocommerce #reviews #comments ol.commentlist li .comment-text p,.woocommerce #review_form #respond p,.woocommerce .comment-reply-title,.woocommerce form .form-row label,.woocommerce-page form .form-row label{font-size:calc(18px - 2px)}.content-tags a,.tagcloud a{border:1px solid #00a7e1}.content-tags a:hover,.tagcloud a:hover{color:#00a7e199}p,.the-content ul li,.the-content ol li{color:#222;font-size:18px;line-height:1.6}.comment-author cite,.primary-sidebar ul li a,.woocommerce ul.products li.product .price,span.asap-author{color:#222}.comment-body p,#commentform input,#commentform textarea{font-size:calc(18px - 2px)}.social-title{font-size:calc(18px - 3px)}.breadcrumb a,.breadcrumb span,.woocommerce .woocommerce-breadcrumb{font-size:calc(18px - 5px)}.content-footer p,.content-footer li,.search-header input:not([type=submit]):not([type=radio]):not([type=checkbox]):not([type=file]){font-size:calc(18px - 4px) !important}.search-header input:not([type=submit]):not([type=radio]):not([type=checkbox]):not([type=file]){border:1px solid #FFFFFF26 !important}h1{font-size:38px}h2{font-size:32px}h3{font-size:28px}h4{font-size:23px}.site-header,#cookiesbox{background:#2471a3}.site-header-wc a span.count-number{border:1px solid #fff}.content-footer{background:#2471a3}.comment-respond>p,.area-comentarios ol>p,.error404 .content-loop p+p,.search .content-loop p+p{border-bottom:1px solid #2471a3}.pagination a,.nav-links a,.woocommerce #respond input#submit,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce #respond input#submit.alt,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.wpcf7-form input.wpcf7-submit{background:#2471a3;color:#fff !important}.woocommerce div.product .woocommerce-tabs ul.tabs li.active{border-bottom:2px solid #2471a3}.pagination a:hover,.nav-links a:hover{background:#2471a3B3}.article-loop a span.entry-title{color:#222 !important}.article-loop a:hover p,.article-loop a:hover span.entry-title{color:#00a7e1 !important}.article-loop.custom-links a:hover span.entry-title{color:#222 !important}#commentform input,#commentform textarea{border:2px solid #2471a3;font-weight:400 !important}.content-loop{max-width:980px}.site-header-content{max-width:980px}.content-footer{max-width:calc(980px - 32px)}.content-footer-social{background:#2471a31A}.content-single{max-width:1300px}.content-page{max-width:1300px}.content-wc{max-width:980px}.reply a,.go-top{background:#2471a3;color:#fff}.reply a{border:2px solid #2471a3}#commentform input[type=submit]{background:#2471a3;color:#fff}.site-header a,header,header label{color:#fff}.content-footer a,.content-footer p,.content-footer .widget-area{color:#fff}header .line{background:#fff}.site-logo img{max-width:160px}.search-header{margin-left:0}.primary-sidebar{width:300px}p.sidebar-title,.comment-respond>p,.area-comentarios ol>p,.asap-subtitle{font-size:calc(18px + 2px)}.popular-post-sidebar ol a{color:#222;font-size:calc(18px - 2px)}.popular-post-sidebar ol li:before,.primary-sidebar div ul li:before{border-color:#2471a3}.search-form input[type=submit]{background:#2471a3}.search-form{border:2px solid #2471a3}.sidebar-title:after,.archive .content-loop h1:after{background:#2471a3}.single-nav .nav-prev a:before,.single-nav .nav-next a:before{border-color:#2471a3}.single-nav a{color:#222;font-size:calc(18px - 3px)}.the-content .post-index{border-top:2px solid #2471a3}.the-content .post-index #show-table{color:#00a7e1;font-size:calc(18px - 3px);font-weight:400}.the-content .post-index .btn-show{font-size:calc(18px - 3px) !important}.search-header form{width:200px}.site-header .site-header-wc svg{stroke:#fff}.item-featured{color:#fff;background:#f16028}.checkbox .check-table svg{stroke:#2471a3}.article-content{height:196px}.content-thin .content-cluster .article-content{height:160px !important}.last-post-sidebar .article-content{height:140px;margin-bottom:8px}.related-posts .article-content{height:120px}@media (max-width:1050px){.last-post-sidebar .article-content,.related-posts .article-content{height:150px !important}}@media (max-width:480px){.article-content{height:180px}}.the-content .post-index #index-table{display:none}@media(max-width:480px){h1,.archive .content-loop h1{font-size:calc(38px - 8px)}h2{font-size:calc(32px - 4px)}h3{font-size:calc(28px - 4px)}}@media(min-width:1050px){.content-thin{width:calc(95% - 300px)}#menu>ul{font-size:calc(18px - 2px)}#menu ul .menu-item-has-children:after{border:solid #fff;border-width:0 2px 2px 0}}.item-featured{margin-top:10px}.asap-date-loop{font-size:calc(18px - 5px) !important;text-align:left}.article-loop p,.article-loop h2,.article-loop h3,.article-loop h4,.article-loop span.entry-title{text-align:left !important;margin-bottom:8px !important;padding:0 10px 0 0 !important}.article-loop .show-extract p{font-size:calc(18px - 2px) !important}.last-post-sidebar .article-loop p,.related-posts .article-loop p{margin-bottom:20px !important}@media (min-width:800px){.article-loop{margin-bottom:1rem !important}.related-posts .article-loop{margin-bottom:0 !important}}.sticky{top:22px !important}.the-content h2:before{margin-top:-20px;height:20px}header{position:relative !important}@media (max-width:1050px){.content-single,.content-page{padding-top:0 !important}.content-loop{padding:2rem}.author .content-loop,.category .content-loop{padding:1rem 2rem 2rem}}@media (max-width:1050px){header label{width:64px;height:64px;position:fixed;padding:0;right:1.5rem;bottom:5rem;border-radius:50%;-webkit-box-shadow:0px 4px 8px 0px rgba(0,0,0,.5);box-shadow:0px 4px 8px 0px rgba(0,0,0,.5);background-color:#fff;-webkit-transition:.3s ease all;transition:.3s ease all;z-index:101;display:flex;align-items:center}.site-header-content{justify-content:center}.line{background:#282828 !important}.circle{margin:0 auto;width:24px;height:24px}#menu{top:0;margin-top:0}}.content-footer{padding:0}.content-footer p{margin-bottom:0 !important}.content-footer .widget-area{margin-bottom:0;padding:1rem}.content-footer li:first-child:before{content:"";padding:0}.content-footer li:before{content:"|";padding:0 7px 0 5px;color:#fff;opacity:.4}.content-footer li{list-style-type:none;display:inline;font-size:15px}.content-footer .widget-title{display:none}.content-footer{background:#2471a3}.content-footer-social{max-width:calc(980px - 32px)}@media (max-width:1050px){.content-footer{padding-bottom:44px}}</style>
+
+<meta name="theme-color" content="#2471a3">
+
+
+<script type="application/ld+json">
+	{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"name": "Mi Diario Python",
+	"alternateName": "Blog Dedicado Al Lenguaje De Programaci&oacute;n Python. Ejercicios Paso A Paso, Libros, Tutoriales En Espa&ntilde;ol, Traducci&oacute;n De Manuales En Ingles Y Alguna Cosa Mas...",
+	"url": "https://pythondiario.com"
+		}
+</script>
+
+
+<script type="application/ld+json">	
+	{
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"mainEntityOfPage": {
+	"@type": "WebPage",
+	"@id": "https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html"
+	},
+	"headline": "Cómo ejecutar scripts Python automáticamente todos los días en Windows", 
+		"image": {
+			"@type": 
+				"ImageObject",
+				"url": "https://pythondiario.com/wp-content/uploads/2021/02/fc1586f1-6c7e-414e-9f63-cbf8e431a688.jpg"
+			},
+				
+	"author": {
+		"@type": "Person",
+		"name": "dcaraballo"
+	},  
+	"publisher": {
+		"@type": "Organization",
+		"name": "Mi Diario Python"	
+					
+	},
+	"datePublished": "2021-02-18 18:35",
+	"dateModified": "2021-03-25 17:54"
+}
+</script>
+
+
+
+
+
+
+
+	
+		
+	
+<script async="" src="./ejecucion_diaria_py_files/f(7).txt" crossorigin="anonymous" data-checked-head="true"></script><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+	
+<body data-rsssl="1" class="postid-1563 aa-prefix-pytho-" style="padding: 0px;">
+	
+	
+	
+<header class="site-header">
+	
+	<div class="site-header-content">
+		
+				
+	<div class="site-name">
+		<a href="https://pythondiario.com/">Mi Diario Python</a>
+	</div>
+
+	
+					
+			
+					
+			
+		
+		
+
+<div>
+	
+		
+	<input type="checkbox" id="btn-menu">
+	
+	<label id="nav-icon" for="btn-menu">
+
+		<div class="circle nav-icon">
+
+			<span class="line top"></span>
+			<span class="line middle"></span>
+			<span class="line bottom"></span>
+
+		</div>
+		
+	</label>
+	
+	
+	<nav id="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+		
+		
+		<ul id="menu-menu-cabecera" class="abc"><li id="menu-item-1280" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1280"><a href="https://pythondiario.com/" itemprop="url">Inicio</a></li>
+<li id="menu-item-1426" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-has-children menu-item-1426 iconselect"><a href="https://pythondiario.com/tag/aprender-python" itemprop="url">Categorias</a>
+<ul class="sub-menu" style="display: block; left: initial; right: 0px;">
+	<li id="menu-item-1427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1427"><a href="https://pythondiario.com/ejercicios-de-programacion-python" itemprop="url">Ejercicios de programación Python con solución</a></li>
+	<li id="menu-item-1428" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1428"><a href="https://pythondiario.com/tutorial-python-desde-cero" itemprop="url">Tutorial python desde cero  2.x</a></li>
+	<li id="menu-item-1429" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1429"><a href="https://pythondiario.com/tutorial-django-desde-cero" itemprop="url">Tutorial Django desde cero y en español</a></li>
+	<li id="menu-item-1430" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1430"><a href="https://pythondiario.com/quienes-somos" itemprop="url">Quienes somos</a></li>
+	<li id="menu-item-1432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1432"><a href="https://pythondiario.com/libros-python" itemprop="url">Libros Python</a></li>
+	<li id="menu-item-1433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1433"><a href="https://pythondiario.com/tutorial-tkinter-completo" itemprop="url">Tutorial Tkinter completo</a></li>
+	<li id="menu-item-1434" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1434"><a href="https://pythondiario.com/buscamos-bloggeros" itemprop="url">Buscamos Bloggeros</a></li>
+	<li id="menu-item-1431" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1431"><a href="https://pythondiario.com/tutorial-python-espanol-35" itemprop="url">Tutorial Python en Español 3.X</a></li>
+</ul>
+</li>
+</ul>	</nav> 
+	
+</div>					
+	</div>
+	
+</header>
+	
+
+<main class="content-single" style="height: auto !important;">
+	
+			
+			
+		
+					
+	<article class="content-thin" style="height: auto !important;">
+				
+		
+	
+		
+		<div role="navigation" aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb"><ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList"><meta name="numberOfItems" content="4"><meta name="itemListOrder" content="Ascending"><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item trail-begin"><a href="https://pythondiario.com/" rel="home" itemprop="item"><span itemprop="name">Mi Diario Python</span></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item"><a href="https://pythondiario.com/2021" itemprop="item"><span itemprop="name">2021</span></a><meta itemprop="position" content="2"></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item"><a href="https://pythondiario.com/2021/02" itemprop="item"><span itemprop="name">febrero</span></a><meta itemprop="position" content="3"></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item trail-end"><span itemprop="name">Cómo ejecutar scripts Python automáticamente todos los días en Windows</span><meta itemprop="position" content="4"></li></ul></div>
+		<h1>Cómo ejecutar scripts Python automáticamente todos los días en Windows</h1>
+			
+			
+
+		
+			<div class="content-author">
+				
+				<div class="author-image">
+				<img data-lazyloaded="1" src="./ejecucion_diaria_py_files/7211138e01d1efb9f138dc630e567ba6.jpeg" alt="" data-src="https://secure.gravatar.com/avatar/7211138e01d1efb9f138dc630e567ba6?s=80&amp;d=mm&amp;r=g" data-srcset="https://secure.gravatar.com/avatar/7211138e01d1efb9f138dc630e567ba6?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo entered litespeed-loaded" height="80" width="80" decoding="async" data-ll-status="loaded" srcset="https://secure.gravatar.com/avatar/7211138e01d1efb9f138dc630e567ba6?s=160&amp;d=mm&amp;r=g 2x"><noscript><img alt='' src='https://secure.gravatar.com/avatar/7211138e01d1efb9f138dc630e567ba6?s=80&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/7211138e01d1efb9f138dc630e567ba6?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' decoding='async'/></noscript>				</div>
+
+				<div class="author-desc">
+					<p>
+												<a href="https://pythondiario.com/author/dcaraballo">
+						dcaraballo						</a>
+											</p>
+					<p>
+						18/02/2021<span class="asap-post-update"> - Actualizado: 25/03/2021</span>					</p>
+				</div>
+				
+			</div>
+
+		
+				
+		
+	
+
+	
+	
+	
+
+	
+
+	
+
+	
+
+		
+		
+	<div class="the-content" style="height: auto !important;">
+	
+	
+<p>En esta publicación les mostraré cómo programar la ejecución de un script Python usando el <strong>Programador de tareas (Windows Task Scheduler)</strong> de <strong>Windows</strong>. Esto te ayudará a automatizar tareas usando Python en Windows.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img data-lazyloaded="1" src="./ejecucion_diaria_py_files/fc1586f1-6c7e-414e-9f63-cbf8e431a688.jpg.webp" decoding="async" width="439" height="262" loading="lazy" data-src="https://pythondiario.com/wp-content/uploads/2021/02/fc1586f1-6c7e-414e-9f63-cbf8e431a688.jpg.webp" alt="Programador de tareas (Windows Task Scheduler) de Windows" class="wp-image-1564 entered litespeed-loaded" data-srcset="https://pythondiario.com/wp-content/uploads/2021/02/fc1586f1-6c7e-414e-9f63-cbf8e431a688.jpg.webp 439w, https://pythondiario.com/wp-content/uploads/2021/02/fc1586f1-6c7e-414e-9f63-cbf8e431a688-300x179.jpg.webp 300w" data-sizes="(max-width: 439px) 100vw, 439px" data-ll-status="loaded" sizes="(max-width: 439px) 100vw, 439px" srcset="https://pythondiario.com/wp-content/uploads/2021/02/fc1586f1-6c7e-414e-9f63-cbf8e431a688.jpg.webp 439w, https://pythondiario.com/wp-content/uploads/2021/02/fc1586f1-6c7e-414e-9f63-cbf8e431a688-300x179.jpg.webp 300w"><noscript><img decoding="async" width="439" height="262" loading="lazy" src="https://pythondiario.com/wp-content/uploads/2021/02/fc1586f1-6c7e-414e-9f63-cbf8e431a688.jpg.webp" alt="Programador de tareas (Windows Task Scheduler) de Windows" class="wp-image-1564" srcset="https://pythondiario.com/wp-content/uploads/2021/02/fc1586f1-6c7e-414e-9f63-cbf8e431a688.jpg.webp 439w, https://pythondiario.com/wp-content/uploads/2021/02/fc1586f1-6c7e-414e-9f63-cbf8e431a688-300x179.jpg.webp 300w" sizes="(max-width: 439px) 100vw, 439px" /></noscript></figure></div><div class="google-auto-placed ap_container" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-9985806029936086" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent; height: 280px;" data-ad-status="filled"><div id="aswift_1_host" style="border: none; height: 280px; width: 885px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:885px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="885" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./ejecucion_diaria_py_files/ads.html" data-google-container-id="a!2" data-google-query-id="CPT5tsrk-YQDFTVKpAQd1_oFVQ" data-load-complete="true"></iframe></div></ins></div>
+
+
+
+<p>¿Imaginas todo lo que podrías <strong>automatizar </strong>si ejecutas una o muchas tarea/s (<strong>script en Python</strong>) todos los días o los días que tu quisieras, a una hora determinada? Esto es lo que vamos a cubrir hoy en <strong>Windows</strong>, pero en una futura entrada también les explicaré como utilizarlo en <strong>Linux </strong>o <strong>MAC</strong>.</p>
+
+
+
+<div class="post-index"><span>Índice<span class="btn-show"><label class="checkbox"><input type="checkbox"><span class="check-table"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="6 9 12 15 18 9"></polyline></svg></span></label></span></span>            			                                <ul id="index-table">
+                
+											<li>
+												<a href="https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#%C2%BFQu%C3%A9_es_el_Programador_de_tareas_de_Windows?" title="¿Qué es el Programador de tareas de Windows?">¿Qué es el Programador de tareas de Windows?</a>
+											</li>
+								            											<li>
+												<a href="https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#Comencemos_a_usar_el_Programador_de_tareas_de_Windows" title="Comencemos a usar el Programador de tareas de Windows">Comencemos a usar el Programador de tareas de Windows</a>
+											            			                                <ul>
+                
+											<li>
+												<a href="https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#1._Crea_tu_primera_tarea" title="1. Crea tu primera tarea">1. Crea tu primera tarea</a>
+											</li>
+								            											<li>
+												<a href="https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#2._Crea_una_acci%C3%B3n" title="2. Crea una acción">2. Crea una acción</a>
+											</li>
+								            											<li>
+												<a href="https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#3._Agregue_el_archivo_ejecutable_Python_(.exe)_al_script_que_queremos_automatizar" title="3. Agregue el archivo ejecutable Python (.exe) al script que queremos automatizar">3. Agregue el archivo ejecutable Python (.exe) al script que queremos automatizar</a>
+											</li>
+								            											<li>
+												<a href="https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#4._Agregar_el_path_de_Python.exe_y_el_path_de_nuestro_script_a_automatizar" title="4. Agregar el path de Python.exe y el path de nuestro script a automatizar">4. Agregar el path de Python.exe y el path de nuestro script a automatizar</a>
+											</li>
+								            											<li>
+												<a href="https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#5._Activemos_la_ejecuci%C3%B3n_de_nuestro_script" title="5. Activemos la ejecución de nuestro script">5. Activemos la ejecución de nuestro script</a>
+											</li>
+								            																	
+									                      </ul>
+                 					</li></ul></div><h2 class="wp-block-heading">¿Qué es el Programador de tareas de Windows?</h2>
+
+
+
+<p><strong><a href="https://es.wikipedia.org/wiki/Planificador_de_tareas_(Windows)" target="_blank" rel="noreferrer noopener">El Programador de tareas de Windows</a></strong> es un componente que brinda la capacidad de programar y automatizar tareas en Windows ejecutando scripts o programas automáticamente en un momento dado.</p>
+
+
+
+<h2 class="wp-block-heading">Comencemos a usar el Programador de tareas de Windows</h2>
+
+
+
+<p>Para ejecutar nuestro programa en Python con el <strong>programador de tareas de Windows</strong>, primero debemos crear una tarea, crear una acción, agregar la ruta del archivo ejecutable Python, el Path de nuestro archivo.py y agregar un trigger para inicializar el programa.</p>
+
+
+
+<h3 class="wp-block-heading">1. Crea tu primera tarea</h3>
+
+
+
+<p>Busque "Programador de tareas" en el inicio de Windows.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img data-lazyloaded="1" src="./ejecucion_diaria_py_files/Abrir-Programador-de-tareas-de-windows.png" decoding="async" width="548" height="488" loading="lazy" data-src="https://pythondiario.com/wp-content/uploads/2021/02/Abrir-Programador-de-tareas-de-windows.png" alt="Abrir Programador de tareas de Windows" class="wp-image-1565 entered litespeed-loaded" data-srcset="https://pythondiario.com/wp-content/uploads/2021/02/Abrir-Programador-de-tareas-de-windows.png 548w, https://pythondiario.com/wp-content/uploads/2021/02/Abrir-Programador-de-tareas-de-windows-300x267.png.webp 300w" data-sizes="(max-width: 548px) 100vw, 548px" data-ll-status="loaded" sizes="(max-width: 548px) 100vw, 548px" srcset="https://pythondiario.com/wp-content/uploads/2021/02/Abrir-Programador-de-tareas-de-windows.png 548w, https://pythondiario.com/wp-content/uploads/2021/02/Abrir-Programador-de-tareas-de-windows-300x267.png.webp 300w"><noscript><img decoding="async" width="548" height="488" loading="lazy" src="https://pythondiario.com/wp-content/uploads/2021/02/Abrir-Programador-de-tareas-de-windows.png" alt="Abrir Programador de tareas de Windows" class="wp-image-1565" srcset="https://pythondiario.com/wp-content/uploads/2021/02/Abrir-Programador-de-tareas-de-windows.png 548w, https://pythondiario.com/wp-content/uploads/2021/02/Abrir-Programador-de-tareas-de-windows-300x267.png.webp 300w" sizes="(max-width: 548px) 100vw, 548px" /></noscript></figure></div><div class="google-auto-placed ap_container" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-9985806029936086" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent; height: 280px;" data-ad-status="filled"><div id="aswift_2_host" style="border: none; height: 280px; width: 885px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0;width:885px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="885" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./ejecucion_diaria_py_files/ads(1).html" data-google-container-id="a!3" data-google-query-id="CODOwsrk-YQDFVO4JwIdJyMNIg" data-load-complete="true"></iframe></div></ins></div>
+
+
+
+<p>Esto abrirá la GUI del Programador de tareas de Windows.</p>
+
+
+
+<p>Vaya a Acción&gt; Crear tarea…</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img data-lazyloaded="1" src="./ejecucion_diaria_py_files/Accion-Crear-Tarea-Programador-de-Tareas.png.webp" decoding="async" width="546" height="415" loading="lazy" data-src="https://pythondiario.com/wp-content/uploads/2021/02/Accion-Crear-Tarea-Programador-de-Tareas.png.webp" alt="Acción - Crear Tarea - Programador de Tareas" class="wp-image-1566 entered litespeed-loaded" data-srcset="https://pythondiario.com/wp-content/uploads/2021/02/Accion-Crear-Tarea-Programador-de-Tareas.png.webp 546w, https://pythondiario.com/wp-content/uploads/2021/02/Accion-Crear-Tarea-Programador-de-Tareas-300x228.png.webp 300w" data-sizes="(max-width: 546px) 100vw, 546px" data-ll-status="loaded" sizes="(max-width: 546px) 100vw, 546px" srcset="https://pythondiario.com/wp-content/uploads/2021/02/Accion-Crear-Tarea-Programador-de-Tareas.png.webp 546w, https://pythondiario.com/wp-content/uploads/2021/02/Accion-Crear-Tarea-Programador-de-Tareas-300x228.png.webp 300w"><noscript><img decoding="async" width="546" height="415" loading="lazy" src="https://pythondiario.com/wp-content/uploads/2021/02/Accion-Crear-Tarea-Programador-de-Tareas.png.webp" alt="Acción - Crear Tarea - Programador de Tareas" class="wp-image-1566" srcset="https://pythondiario.com/wp-content/uploads/2021/02/Accion-Crear-Tarea-Programador-de-Tareas.png.webp 546w, https://pythondiario.com/wp-content/uploads/2021/02/Accion-Crear-Tarea-Programador-de-Tareas-300x228.png.webp 300w" sizes="(max-width: 546px) 100vw, 546px" /></noscript></figure></div>
+
+
+
+<p>Agréguele un nombre y opcional una descripción de lo que realizará la tarea.</p><div class="google-auto-placed ap_container" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-9985806029936086" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent; height: 280px;" data-ad-status="filled"><div id="aswift_3_host" style="border: none; height: 280px; width: 885px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;border:0;width:885px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="885" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./ejecucion_diaria_py_files/ads(2).html" data-google-container-id="a!4" data-google-query-id="CLrW-8vk-YQDFe-XJwIdLiEDYQ" data-load-complete="true"></iframe></div></ins></div>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img data-lazyloaded="1" src="./ejecucion_diaria_py_files/Nombre-Tarea-Programador-de-Tareas.png" decoding="async" width="791" height="600" loading="lazy" data-src="https://pythondiario.com/wp-content/uploads/2021/02/Nombre-Tarea-Programador-de-Tareas.png" alt="Nombre Tarea - Programador de Tareas" class="wp-image-1567 entered litespeed-loaded" data-srcset="https://pythondiario.com/wp-content/uploads/2021/02/Nombre-Tarea-Programador-de-Tareas.png 791w, https://pythondiario.com/wp-content/uploads/2021/02/Nombre-Tarea-Programador-de-Tareas-300x228.png.webp 300w, https://pythondiario.com/wp-content/uploads/2021/02/Nombre-Tarea-Programador-de-Tareas-768x583.png.webp 768w" data-sizes="(max-width: 791px) 100vw, 791px" data-ll-status="loaded" sizes="(max-width: 791px) 100vw, 791px" srcset="https://pythondiario.com/wp-content/uploads/2021/02/Nombre-Tarea-Programador-de-Tareas.png 791w, https://pythondiario.com/wp-content/uploads/2021/02/Nombre-Tarea-Programador-de-Tareas-300x228.png.webp 300w, https://pythondiario.com/wp-content/uploads/2021/02/Nombre-Tarea-Programador-de-Tareas-768x583.png.webp 768w"><noscript><img decoding="async" width="791" height="600" loading="lazy" src="https://pythondiario.com/wp-content/uploads/2021/02/Nombre-Tarea-Programador-de-Tareas.png" alt="Nombre Tarea - Programador de Tareas" class="wp-image-1567" srcset="https://pythondiario.com/wp-content/uploads/2021/02/Nombre-Tarea-Programador-de-Tareas.png 791w, https://pythondiario.com/wp-content/uploads/2021/02/Nombre-Tarea-Programador-de-Tareas-300x228.png.webp 300w, https://pythondiario.com/wp-content/uploads/2021/02/Nombre-Tarea-Programador-de-Tareas-768x583.png.webp 768w" sizes="(max-width: 791px) 100vw, 791px" /></noscript></figure></div>
+
+
+
+<h3 class="wp-block-heading">2. Crea una acción</h3>
+
+
+
+<p>Vaya a Acciones - Nueva...</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img data-lazyloaded="1" src="./ejecucion_diaria_py_files/Acciones-Nueva-Programador-de-Tareas.png.webp" decoding="async" width="790" height="601" loading="lazy" data-src="https://pythondiario.com/wp-content/uploads/2021/02/Acciones-Nueva-Programador-de-Tareas.png.webp" alt="Acciones - Nueva " class="wp-image-1568 entered litespeed-loaded" data-srcset="https://pythondiario.com/wp-content/uploads/2021/02/Acciones-Nueva-Programador-de-Tareas.png.webp 790w, https://pythondiario.com/wp-content/uploads/2021/02/Acciones-Nueva-Programador-de-Tareas-300x228.png.webp 300w, https://pythondiario.com/wp-content/uploads/2021/02/Acciones-Nueva-Programador-de-Tareas-768x584.png.webp 768w" data-sizes="(max-width: 790px) 100vw, 790px" data-ll-status="loaded" sizes="(max-width: 790px) 100vw, 790px" srcset="https://pythondiario.com/wp-content/uploads/2021/02/Acciones-Nueva-Programador-de-Tareas.png.webp 790w, https://pythondiario.com/wp-content/uploads/2021/02/Acciones-Nueva-Programador-de-Tareas-300x228.png.webp 300w, https://pythondiario.com/wp-content/uploads/2021/02/Acciones-Nueva-Programador-de-Tareas-768x584.png.webp 768w"><noscript><img decoding="async" width="790" height="601" loading="lazy" src="https://pythondiario.com/wp-content/uploads/2021/02/Acciones-Nueva-Programador-de-Tareas.png.webp" alt="Acciones - Nueva " class="wp-image-1568" srcset="https://pythondiario.com/wp-content/uploads/2021/02/Acciones-Nueva-Programador-de-Tareas.png.webp 790w, https://pythondiario.com/wp-content/uploads/2021/02/Acciones-Nueva-Programador-de-Tareas-300x228.png.webp 300w, https://pythondiario.com/wp-content/uploads/2021/02/Acciones-Nueva-Programador-de-Tareas-768x584.png.webp 768w" sizes="(max-width: 790px) 100vw, 790px" /></noscript></figure></div>
+
+
+
+<h3 class="wp-block-heading">3. Agregue el archivo ejecutable Python (.exe) al script que queremos automatizar</h3><div class="google-auto-placed ap_container" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-9985806029936086" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent; height: 280px;" data-ad-status="filled"><div id="aswift_4_host" style="border: none; height: 280px; width: 885px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_4" name="aswift_4" style="left:0;position:absolute;top:0;border:0;width:885px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="885" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./ejecucion_diaria_py_files/ads(3).html" data-google-container-id="a!5" data-google-query-id="CJiNhtnk-YQDFe-WJwIdENEO9w" data-load-complete="true"></iframe></div></ins></div>
+
+
+
+<p>Busque el <strong>Path </strong>de Python usando <strong>where python</strong> en la línea de comando (consola).</p><div class="google-auto-placed ap_container" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-9985806029936086" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent; height: 280px;" data-ad-status="filled"><div id="aswift_5_host" style="border: none; height: 280px; width: 885px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_5" name="aswift_5" style="left:0;position:absolute;top:0;border:0;width:885px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="885" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./ejecucion_diaria_py_files/ads(4).html" data-google-container-id="a!6" data-google-query-id="CMfxndnk-YQDFcCEJwIdEoAPqQ" data-load-complete="true"></iframe></div></ins></div>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img data-lazyloaded="1" src="./ejecucion_diaria_py_files/Where-Python-Command.png" decoding="async" width="596" height="145" loading="lazy" data-src="https://pythondiario.com/wp-content/uploads/2021/02/Where-Python-Command.png" alt="Where Python Command" class="wp-image-1569 entered litespeed-loaded" data-srcset="https://pythondiario.com/wp-content/uploads/2021/02/Where-Python-Command.png 596w, https://pythondiario.com/wp-content/uploads/2021/02/Where-Python-Command-300x73.png.webp 300w" data-sizes="(max-width: 596px) 100vw, 596px" data-ll-status="loaded" sizes="(max-width: 596px) 100vw, 596px" srcset="https://pythondiario.com/wp-content/uploads/2021/02/Where-Python-Command.png 596w, https://pythondiario.com/wp-content/uploads/2021/02/Where-Python-Command-300x73.png.webp 300w"><noscript><img decoding="async" width="596" height="145" loading="lazy" src="https://pythondiario.com/wp-content/uploads/2021/02/Where-Python-Command.png" alt="Where Python Command" class="wp-image-1569" srcset="https://pythondiario.com/wp-content/uploads/2021/02/Where-Python-Command.png 596w, https://pythondiario.com/wp-content/uploads/2021/02/Where-Python-Command-300x73.png.webp 300w" sizes="(max-width: 596px) 100vw, 596px" /></noscript></figure></div><div class="google-auto-placed ap_container" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-9985806029936086" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent; height: 280px;" data-ad-status="filled"><div id="aswift_6_host" style="border: none; height: 280px; width: 885px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_6" name="aswift_6" style="left:0;position:absolute;top:0;border:0;width:885px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="885" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./ejecucion_diaria_py_files/ads(5).html" data-google-container-id="a!7" data-google-query-id="CJOZpd3k-YQDFScC-wMdvPoIvw" data-load-complete="true"></iframe></div></ins></div>
+
+
+
+<p>Copie toda la ruta del Path (python.exe) para agregarlo en la acción de la tarea.</p><div class="google-auto-placed ap_container" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-9985806029936086" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent; height: 280px;" data-ad-status="filled"><div id="aswift_7_host" style="border: none; height: 280px; width: 885px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_7" name="aswift_7" style="left:0;position:absolute;top:0;border:0;width:885px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="885" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./ejecucion_diaria_py_files/ads(6).html" data-google-container-id="a!8" data-google-query-id="CNTQvt_k-YQDFcCTJwIdR9kCgg" data-load-complete="true"></iframe></div></ins></div>
+
+
+
+<h3 class="wp-block-heading">4. Agregar el path de Python.exe y el path de nuestro script a automatizar</h3>
+
+
+
+<p>En <strong>Acción </strong>dejamos la opción "Iniciar un Programa"</p>
+
+
+
+<p>En el TextBox <strong>Programa o Script</strong> podemos buscar en examinar o si ya tenemos copiado el <strong>Path de python.exe</strong> lo agregamos acá.</p>
+
+
+
+<p>En <strong>Agregar Argumentos</strong> agregaremos el nombre de nuestro archivo.py, en mi caso Twitter_Scrapper.py</p>
+
+
+
+<p>Por último, en <strong>Iniciar en</strong> agregamos la ruta de nuestro archivo.py</p>
+
+
+
+<p>Dar click en OK</p>
+
+
+
+<p>En mi caso todo quedó así:<br><strong>Path Python</strong>: C:\Users\Diego\AppData\Local\Programs\Python\Python39\python.exe<br><strong>Path script a automatizar</strong>: C:\Users\Diego\Desarrollo\Proyectos Python<br><strong>Argumentos</strong>: Twitter_Scrapper.py</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img data-lazyloaded="1" src="./ejecucion_diaria_py_files/Crear-Nueva-Accion-Programador-de-Tareas.png.webp" decoding="async" width="566" height="627" loading="lazy" data-src="https://pythondiario.com/wp-content/uploads/2021/02/Crear-Nueva-Accion-Programador-de-Tareas.png.webp" alt="Crear Nueva Acción" class="wp-image-1570 entered litespeed-loaded" data-srcset="https://pythondiario.com/wp-content/uploads/2021/02/Crear-Nueva-Accion-Programador-de-Tareas.png.webp 566w, https://pythondiario.com/wp-content/uploads/2021/02/Crear-Nueva-Accion-Programador-de-Tareas-271x300.png.webp 271w" data-sizes="(max-width: 566px) 100vw, 566px" data-ll-status="loaded" sizes="(max-width: 566px) 100vw, 566px" srcset="https://pythondiario.com/wp-content/uploads/2021/02/Crear-Nueva-Accion-Programador-de-Tareas.png.webp 566w, https://pythondiario.com/wp-content/uploads/2021/02/Crear-Nueva-Accion-Programador-de-Tareas-271x300.png.webp 271w"><noscript><img decoding="async" width="566" height="627" loading="lazy" src="https://pythondiario.com/wp-content/uploads/2021/02/Crear-Nueva-Accion-Programador-de-Tareas.png.webp" alt="Crear Nueva Acción" class="wp-image-1570" srcset="https://pythondiario.com/wp-content/uploads/2021/02/Crear-Nueva-Accion-Programador-de-Tareas.png.webp 566w, https://pythondiario.com/wp-content/uploads/2021/02/Crear-Nueva-Accion-Programador-de-Tareas-271x300.png.webp 271w" sizes="(max-width: 566px) 100vw, 566px" /></noscript></figure></div><div class="google-auto-placed ap_container" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-9985806029936086" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent; height: 280px;" data-ad-status="filled"><div id="aswift_8_host" style="border: none; height: 280px; width: 885px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_8" name="aswift_8" style="left:0;position:absolute;top:0;border:0;width:885px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="885" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./ejecucion_diaria_py_files/ads(7).html" data-google-container-id="a!9" data-google-query-id="CM6SlOLk-YQDFQi9JwIdDtkM6w" data-load-complete="true"></iframe></div></ins></div>
+
+
+
+<p><strong>Nota</strong>: Alternativamente, podemos crear un archivo .bat que combine nuestro código python con el ejecutable python.exe</p>
+
+
+
+<h3 class="wp-block-heading">5. Activemos la ejecución de nuestro script</h3>
+
+
+
+<p>Vaya a Desencadenadores o Triggers - Nuevo...</p>
+
+
+
+<p>Elija la repetición que desee. Aquí puede programar scripts para que se ejecuten diariamente, semanalmente, mensualmente o solo una vez.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img data-lazyloaded="1" src="./ejecucion_diaria_py_files/Nuevo-Trigger-Programador-de-tareas.png.webp" decoding="async" width="732" height="640" loading="lazy" data-src="https://pythondiario.com/wp-content/uploads/2021/02/Nuevo-Trigger-Programador-de-tareas.png.webp" alt="Nuevo Trigger" class="wp-image-1572 entered litespeed-loaded" data-srcset="https://pythondiario.com/wp-content/uploads/2021/02/Nuevo-Trigger-Programador-de-tareas.png.webp 732w, https://pythondiario.com/wp-content/uploads/2021/02/Nuevo-Trigger-Programador-de-tareas-300x262.png.webp 300w" data-sizes="(max-width: 732px) 100vw, 732px" data-ll-status="loaded" sizes="(max-width: 732px) 100vw, 732px" srcset="https://pythondiario.com/wp-content/uploads/2021/02/Nuevo-Trigger-Programador-de-tareas.png.webp 732w, https://pythondiario.com/wp-content/uploads/2021/02/Nuevo-Trigger-Programador-de-tareas-300x262.png.webp 300w"><noscript><img decoding="async" width="732" height="640" loading="lazy" src="https://pythondiario.com/wp-content/uploads/2021/02/Nuevo-Trigger-Programador-de-tareas.png.webp" alt="Nuevo Trigger" class="wp-image-1572" srcset="https://pythondiario.com/wp-content/uploads/2021/02/Nuevo-Trigger-Programador-de-tareas.png.webp 732w, https://pythondiario.com/wp-content/uploads/2021/02/Nuevo-Trigger-Programador-de-tareas-300x262.png.webp 300w" sizes="(max-width: 732px) 100vw, 732px" /></noscript></figure></div>
+
+
+
+<p>Click en Aceptar</p>
+
+
+
+<p>Una vez que hayamos configurado esto, su desencadenante o Trigger ahora está activo y <strong>nuestro script se ejecutará automáticamente todos los días</strong>.</p>
+
+
+
+<p>En este caso de ejemplo, la tarea programada se comenzará a ejecutar el 18/02/2021 y se repetirá <strong>todos los días cada 5 minutos</strong>.</p>
+
+
+
+<p>Hasta aquí el tutorial, espero que esta entrada te sirva tanto como me ha servido a mi aprenderla en su momento. Hoy en día tengo muchos script en automático gracias al <strong>programador de tareas de Windows</strong>.</p>
+
+
+
+<p>Nos vemos en el próximo artículo, saludos. Diego</p>
+<div class="content-tags"><a href="https://pythondiario.com/tag/automatizar" rel="tag">automatizar</a><a href="https://pythondiario.com/tag/script" rel="tag">script</a><a href="https://pythondiario.com/tag/windows" rel="tag">windows</a></div>				
+	
+	</div>
+
+	
+<div class="social-buttons flexbox">
+		
+		
+			
+	
+		
+	
+		
+	
+		
+			
+			
+		
+	
+		
+	
+		
+	
+</div>
+		<div class="author-box">
+
+			<div class="author-box-avatar">
+
+				<img data-lazyloaded="1" src="./ejecucion_diaria_py_files/7211138e01d1efb9f138dc630e567ba6.jpeg" alt="" data-src="https://secure.gravatar.com/avatar/7211138e01d1efb9f138dc630e567ba6?s=80&amp;d=mm&amp;r=g" data-srcset="https://secure.gravatar.com/avatar/7211138e01d1efb9f138dc630e567ba6?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo entered litespeed-loaded" height="80" width="80" decoding="async" data-ll-status="loaded" srcset="https://secure.gravatar.com/avatar/7211138e01d1efb9f138dc630e567ba6?s=160&amp;d=mm&amp;r=g 2x"><noscript><img alt='' src='https://secure.gravatar.com/avatar/7211138e01d1efb9f138dc630e567ba6?s=80&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/7211138e01d1efb9f138dc630e567ba6?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' decoding='async'/></noscript>
+			</div>
+
+			<div class="author-box-info">
+
+								<p class="author-box-name"><a href="https://pythondiario.com/author/dcaraballo">dcaraballo</a></p>
+				
+				<p class="author-box-desc">Creador de @PythonDiario, amante de la Tecnología y la Naturaleza. Programador Python, C# . NET</p>
+
+				
+				<div class="author-box-social">
+
+					
+					<a href="https://www.facebook.com/PythonDiario/" class="asap-icon icon-facebook" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path></svg></a>
+
+					
+					
+					<a href="https://twitter.com/DiePyCar" class="asap-icon icon-twitter" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path></svg></a>
+
+					
+					
+					<a href="https://www.instagram.com/midiariopython/" class="asap-icon icon-instagram" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="4" y="4" width="16" height="16" rx="4"></rect><circle cx="12" cy="12" r="3"></circle><line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line></svg></a>
+
+					
+								
+
+										
+
+				</div>
+
+				
+			</div>
+
+		</div>
+
+	
+<ul class="single-nav">
+
+	<li class="nav-prev">
+		
+			
+		<a href="https://pythondiario.com/2021/02/como-abrir-un-archivo-pdf-en-python.html">¿Cómo abrir un archivo PDF en Python?</a>
+		
+			
+	</li>
+
+	<li class="nav-next">	
+		
+			
+	<a href="https://pythondiario.com/2021/02/formateadores-automaticos-para-utilizar-en-python.html">
+		
+		Formateadores automáticos para utilizar en Python		
+	</a>
+		
+			
+	</li>		
+
+</ul>
+
+	
+	<div class="related-posts">
+	
+	
+<article class="article-loop asap-columns-3">
+	
+	<a href="https://pythondiario.com/2016/04/operadores-logicos-y-operaciones.html" rel="bookmark">
+		
+				
+		<div class="article-content">
+
+						
+				<div style="background-image: url(&#39;https://pythondiario.com/wp-content/uploads/2016/04/programar.jpg.webp&#39;);" class="article-image"></div>
+			
+						
+		</div>
+		
+				
+		<p class="entry-title">Operadores lógicos y operaciones</p>				
+	</a>
+	
+</article>
+<article class="article-loop asap-columns-3">
+	
+	<a href="https://pythondiario.com/2017/11/procesamiento-de-imagenes-con-python-y-2.html" rel="bookmark">
+		
+				
+		<p class="entry-title">Procesamiento de Imágenes con Python y Pillow</p>				
+	</a>
+	
+</article>
+<article class="article-loop asap-columns-3">
+	
+	<a href="https://pythondiario.com/2017/04/introduccion-pandas-para-el-analisis-de.html" rel="bookmark">
+		
+				
+		<div class="article-content">
+
+						
+				<div style="background-image: url(&#39;https://pythondiario.com/wp-content/uploads/2017/04/pandas_logo.png&#39;);" class="article-image"></div>
+			
+						
+		</div>
+		
+				
+		<p class="entry-title">Introduccion a Pandas para el analisis de datos</p>				
+	</a>
+	
+</article>
+<article class="article-loop asap-columns-3">
+	
+	<a href="https://pythondiario.com/2016/05/mini-curso-de-wxpython-3-aplicaciones.html" rel="bookmark">
+		
+				
+		<div class="article-content">
+
+						
+				<div style="background-image: url(&#39;https://pythondiario.com/wp-content/uploads/2016/05/img_01.png.webp&#39;);" class="article-image"></div>
+			
+						
+		</div>
+		
+				
+		<p class="entry-title">Mini-Curso de wxPython 3. Aplicaciones wxPython y POO</p>				
+	</a>
+	
+</article>
+<article class="article-loop asap-columns-3">
+	
+	<a href="https://pythondiario.com/2018/06/empaquetamiento.html" rel="bookmark">
+		
+				
+		<p class="entry-title">Empaquetamiento</p>				
+	</a>
+	
+</article>
+<article class="article-loop asap-columns-3">
+	
+	<a href="https://pythondiario.com/2018/09/primeros-pasos-con-asyncio-programacion.html" rel="bookmark">
+		
+				
+		<p class="entry-title">Primeros pasos con asyncio - Programación en Python</p>				
+	</a>
+	
+</article>	
+		
+	</div>
+
+
+<div id="comentarios" class="area-comentarios">
+	
+			
+		<ol>
+			
+			
+					<li class="comment even thread-even depth-1" id="comment-3452">
+				<div id="div-comment-3452" class="comment-body">
+				<div class="comment-author vcard">
+			<img data-lazyloaded="1" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" alt="" data-src="https://secure.gravatar.com/avatar/cc96a8bb0650e08ce69f434a148b5016?s=42&amp;d=mm&amp;r=g" data-srcset="https://secure.gravatar.com/avatar/cc96a8bb0650e08ce69f434a148b5016?s=84&amp;d=mm&amp;r=g 2x" class="avatar avatar-42 photo" height="42" width="42" decoding="async"><noscript><img alt='' src='https://secure.gravatar.com/avatar/cc96a8bb0650e08ce69f434a148b5016?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/cc96a8bb0650e08ce69f434a148b5016?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' decoding='async'/></noscript>			<cite class="fn">Esteban</cite> <span class="says">dice:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#comment-3452">agosto 28, 2023 a las 8:03 pm</a>		</div>
+
+		<p>Excelente post!! Me funcionó bien para mi script de respaldos!!</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#comment-3452" data-commentid="3452" data-postid="1563" data-belowelement="div-comment-3452" data-respondelement="respond" data-replyto="Responder a Esteban" aria-label="Responder a Esteban">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+			
+		</ol>
+	
+			
+	
+		<div id="respond" class="comment-respond">
+		<p>Deja una respuesta <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://pythondiario.com/2021/02/como-ejecutar-scripts-python-automaticamente-todos-los-dias-en-windows.html#respond" style="display:none;">Cancelar la respuesta</a></small></p><form action="https://pythondiario.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><input placeholder="Nombre *" id="author" name="author" type="text" value="" size="30" required="">
+<div class="fields-wrap"><input placeholder="Correo electrónico *" id="email" name="email" type="text" value="" size="30" required="">
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Guarda mi nombre, correo electrónico y web en este navegador para la próxima vez que comente.</label></p>
+<textarea placeholder="Comentario" id="comment" name="comment-e5829e7aef0e3577771c2d48" cols="45" rows="5" required=""></textarea><textarea name="comment" rows="1" cols="1" style="display:none"></textarea><input type="hidden" name="comment-replaced" value="true"><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Publicar el comentario"> <input type="hidden" name="comment_post_ID" value="1563" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display:none;"><input type="text" name="nxts" value="1710494888"><input type="text" name="nxts_signed" value="61cbfd7f5b5790e6aad4d5e9f5b96e0a071f7358"><input type="text" name="a97fac7e2d0de7ca9da" value="ed59e87fb"><input type="text" name="badfef3a7b7cf29c8cdeb492424" value=""></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>Δ<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="1710626573385"><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p>	</div></form><!-- #respond -->
+	
+</div>
+	<div class="social-fix">
+			
+	
+<div class="social-buttons flexbox">
+		
+		
+			
+	
+		
+	
+		
+	
+		
+			
+			
+		
+	
+		
+	
+		
+	
+</div>			
+	</div>	
+
+				
+	</div></article>
+	
+		
+	
+<aside id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+	
+		
+	<div class="sticky">
+		 
+		
+	
+	<div class="last-post-sidebar">
+		
+	
+<article class="article-loop asap-columns-1">
+	
+	<a href="https://pythondiario.com/2022/01/instalar-python-y-django.html" rel="bookmark">
+		
+				
+		<p class="entry-title">Instalar Python y Django</p>				
+	</a>
+	
+</article>
+<article class="article-loop asap-columns-1">
+	
+	<a href="https://pythondiario.com/2021/11/consejos-para-debuggear-con-print.html" rel="bookmark">
+		
+				
+		<p class="entry-title">Consejos para debuggear con print()</p>				
+	</a>
+	
+</article>
+<article class="article-loop asap-columns-1">
+	
+	<a href="https://pythondiario.com/2021/08/pdf-a-jpg-como-convertir-un-archivo-usando-python.html" rel="bookmark">
+		
+				
+		<div class="article-content">
+			
+			
+						
+				<div style="background-image: url(&#39;https://pythondiario.com/wp-content/uploads/2021/08/pdf-to-jpg-300x140.jpg.webp&#39;);" class="article-image"></div>
+			
+						
+		</div>
+		
+				
+		<p class="entry-title">pdf a jpg: Cómo convertir un archivo usando python</p>				
+	</a>
+	
+</article>
+<article class="article-loop asap-columns-1">
+	
+	<a href="https://pythondiario.com/2021/08/ejemplos-github-copilot.html" rel="bookmark">
+		
+				
+		<div class="article-content">
+			
+			
+						
+				<div style="background-image: url(&#39;https://pythondiario.com/wp-content/uploads/2021/08/1_-yl50W6IRgNg5v0j3TfjnA-300x140.png.webp&#39;);" class="article-image"></div>
+			
+						
+		</div>
+		
+				
+		<p class="entry-title">GitHub Copilot, ejemplos en Python: ¿Realmente nos ayuda a programar?</p>				
+	</a>
+	
+</article>
+<article class="article-loop asap-columns-1">
+	
+	<a href="https://pythondiario.com/2021/03/como-instalar-y-configurar-django-en-ubuntu-20-04.html" rel="bookmark">
+		
+				
+		<div class="article-content">
+			
+			
+						
+				<div style="background-image: url(&#39;https://pythondiario.com/wp-content/uploads/2021/03/Imagen7.png.webp&#39;);" class="article-image"></div>
+			
+						
+		</div>
+		
+				
+		<p class="entry-title">Cómo instalar y configurar Django en Ubuntu 20.04</p>				
+	</a>
+	
+</article>		
+	</div>
+
+<div>
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-white-color has-text-color has-background wp-element-button" href="https://whitemonkey.io/" style="background-color:#006b3d" target="_blank" rel="noreferrer noopener"> ¿Necesitas un Software a medida? </a></div>
+</div>
+</div><div>
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-outline"><a class="wp-block-button__link has-white-color has-text-color has-background wp-element-button" href="https://cucutime.com/" style="background-color:#006b3d" target="_blank" rel="noreferrer noopener">Control de asistencia</a></div>
+</div>
+</div>		
+		
+	</div>
+		 
+		
+	
+</aside>
+	
+</main>
+
+ 
+
+	
+	
+			
+	<div class="footer-breadcrumb">
+				
+		<div class="breadcrumb-trail breadcrumbs"><ul class="breadcrumb"><li><a href="https://pythondiario.com/" rel="home" itemprop="item"><span itemprop="name">Mi Diario Python</span></a></li><li><a href="https://pythondiario.com/2021" itemprop="item"><span itemprop="name">2021</span></a></li><li><a href="https://pythondiario.com/2021/02" itemprop="item"><span itemprop="name">febrero</span></a></li><li><span itemprop="name">Cómo ejecutar scripts Python automáticamente todos los días en Windows</span></li></ul></div>			
+	</div>
+		
+	
+	
+			
+		<span class="go-top" style="display: none;"><span>Subir</span><i class="arrow arrow-up"></i></span>
+		
+	
+	
+	
+	
+	<footer>
+	
+		<div class="content-footer">
+
+			<div class="widget-content-footer">
+				
+				
+								
+					<div class="widget-area"><p class="widget-title">Newsletter</p><div class="tnp tnp-widget-minimal"><form class="tnp-form" action="https://pythondiario.com/?na=s" method="post"><input type="hidden" name="nr" value="widget-minimal"><input class="tnp-email" type="email" required="" name="ne" value="" placeholder="Email"><input class="tnp-submit" type="submit" value="Suscribirse"></form></div></div><div class="widget-area"><p class="widget-title">Texto</p>			<div class="textwidget"><p><strong>SIGUENOS</strong></p>
+</div>
+		</div>			
+		<div class="widget-area">			
+		<p class="widget-title">SIGUENOS 2</p>			
+					
+		<a href="https://www.facebook.com/PythonDiario?_rdc=1&amp;_rdr" class="asap-icon icon-facebook" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path></svg></a>
+			
+					
+					
+		<a href="https://twitter.com/diepycar?lang=es" class="asap-icon icon-twitter" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path></svg></a>
+			
+					
+					
+		<a href="https://www.instagram.com/midiariopython/" class="asap-icon icon-instagram" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="4" y="4" width="16" height="16" rx="4"></rect><circle cx="12" cy="12" r="3"></circle><line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line></svg></a>
+			
+					
+				
+		<a href="https://www.youtube.com/channel/UC00OHSvah2raRRry2iGLTeg" class="asap-icon icon-youtube" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="3" y="5" width="18" height="14" rx="4"></rect><path d="M10 9l5 3l-5 3z"></path></svg></a>
+			
+					
+		
+		
+		
+		
+		
+		
+		</div>			
+					
+								
+								
+								
+				
+			</div>
+			
+		</div>
+
+	</footer>
+
+	
+	
+	
+	<div class="sgpb-main-popup-data-container-1753" style="position:fixed;opacity: 0;filter: opacity(0%);transform: scale(0);">
+							
+						  </div><script type="text/javascript" src="./ejecucion_diaria_py_files/comment-reply.min.js" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" src="./ejecucion_diaria_py_files/asap.min.js" id="load_asap_scripts-js"></script>
+<script>!function(){window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var d=0,a=advanced_ads_ready_queue.length;d<a;d++)advanced_ads_ready(advanced_ads_ready_queue[d])}();</script>
+  <script data-no-optimize="1">!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?module.exports=e():"function"==typeof define&&define.amd?define(e):(t="undefined"!=typeof globalThis?globalThis:t||self).LazyLoad=e()}(this,function(){"use strict";function e(){return(e=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var n,a=arguments[e];for(n in a)Object.prototype.hasOwnProperty.call(a,n)&&(t[n]=a[n])}return t}).apply(this,arguments)}function i(t){return e({},it,t)}function o(t,e){var n,a="LazyLoad::Initialized",i=new t(e);try{n=new CustomEvent(a,{detail:{instance:i}})}catch(t){(n=document.createEvent("CustomEvent")).initCustomEvent(a,!1,!1,{instance:i})}window.dispatchEvent(n)}function l(t,e){return t.getAttribute(gt+e)}function c(t){return l(t,bt)}function s(t,e){return function(t,e,n){e=gt+e;null!==n?t.setAttribute(e,n):t.removeAttribute(e)}(t,bt,e)}function r(t){return s(t,null),0}function u(t){return null===c(t)}function d(t){return c(t)===vt}function f(t,e,n,a){t&&(void 0===a?void 0===n?t(e):t(e,n):t(e,n,a))}function _(t,e){nt?t.classList.add(e):t.className+=(t.className?" ":"")+e}function v(t,e){nt?t.classList.remove(e):t.className=t.className.replace(new RegExp("(^|\\s+)"+e+"(\\s+|$)")," ").replace(/^\s+/,"").replace(/\s+$/,"")}function g(t){return t.llTempImage}function b(t,e){!e||(e=e._observer)&&e.unobserve(t)}function p(t,e){t&&(t.loadingCount+=e)}function h(t,e){t&&(t.toLoadCount=e)}function n(t){for(var e,n=[],a=0;e=t.children[a];a+=1)"SOURCE"===e.tagName&&n.push(e);return n}function m(t,e){(t=t.parentNode)&&"PICTURE"===t.tagName&&n(t).forEach(e)}function a(t,e){n(t).forEach(e)}function E(t){return!!t[st]}function I(t){return t[st]}function y(t){return delete t[st]}function A(e,t){var n;E(e)||(n={},t.forEach(function(t){n[t]=e.getAttribute(t)}),e[st]=n)}function k(a,t){var i;E(a)&&(i=I(a),t.forEach(function(t){var e,n;e=a,(t=i[n=t])?e.setAttribute(n,t):e.removeAttribute(n)}))}function L(t,e,n){_(t,e.class_loading),s(t,ut),n&&(p(n,1),f(e.callback_loading,t,n))}function w(t,e,n){n&&t.setAttribute(e,n)}function x(t,e){w(t,ct,l(t,e.data_sizes)),w(t,rt,l(t,e.data_srcset)),w(t,ot,l(t,e.data_src))}function O(t,e,n){var a=l(t,e.data_bg_multi),i=l(t,e.data_bg_multi_hidpi);(a=at&&i?i:a)&&(t.style.backgroundImage=a,n=n,_(t=t,(e=e).class_applied),s(t,ft),n&&(e.unobserve_completed&&b(t,e),f(e.callback_applied,t,n)))}function N(t,e){!e||0<e.loadingCount||0<e.toLoadCount||f(t.callback_finish,e)}function C(t,e,n){t.addEventListener(e,n),t.llEvLisnrs[e]=n}function M(t){return!!t.llEvLisnrs}function z(t){if(M(t)){var e,n,a=t.llEvLisnrs;for(e in a){var i=a[e];n=e,i=i,t.removeEventListener(n,i)}delete t.llEvLisnrs}}function R(t,e,n){var a;delete t.llTempImage,p(n,-1),(a=n)&&--a.toLoadCount,v(t,e.class_loading),e.unobserve_completed&&b(t,n)}function T(o,r,c){var l=g(o)||o;M(l)||function(t,e,n){M(t)||(t.llEvLisnrs={});var a="VIDEO"===t.tagName?"loadeddata":"load";C(t,a,e),C(t,"error",n)}(l,function(t){var e,n,a,i;n=r,a=c,i=d(e=o),R(e,n,a),_(e,n.class_loaded),s(e,dt),f(n.callback_loaded,e,a),i||N(n,a),z(l)},function(t){var e,n,a,i;n=r,a=c,i=d(e=o),R(e,n,a),_(e,n.class_error),s(e,_t),f(n.callback_error,e,a),i||N(n,a),z(l)})}function G(t,e,n){var a,i,o,r,c;t.llTempImage=document.createElement("IMG"),T(t,e,n),E(c=t)||(c[st]={backgroundImage:c.style.backgroundImage}),o=n,r=l(a=t,(i=e).data_bg),c=l(a,i.data_bg_hidpi),(r=at&&c?c:r)&&(a.style.backgroundImage='url("'.concat(r,'")'),g(a).setAttribute(ot,r),L(a,i,o)),O(t,e,n)}function D(t,e,n){var a;T(t,e,n),a=e,e=n,(t=It[(n=t).tagName])&&(t(n,a),L(n,a,e))}function V(t,e,n){var a;a=t,(-1<yt.indexOf(a.tagName)?D:G)(t,e,n)}function F(t,e,n){var a;t.setAttribute("loading","lazy"),T(t,e,n),a=e,(e=It[(n=t).tagName])&&e(n,a),s(t,vt)}function j(t){t.removeAttribute(ot),t.removeAttribute(rt),t.removeAttribute(ct)}function P(t){m(t,function(t){k(t,Et)}),k(t,Et)}function S(t){var e;(e=At[t.tagName])?e(t):E(e=t)&&(t=I(e),e.style.backgroundImage=t.backgroundImage)}function U(t,e){var n;S(t),n=e,u(e=t)||d(e)||(v(e,n.class_entered),v(e,n.class_exited),v(e,n.class_applied),v(e,n.class_loading),v(e,n.class_loaded),v(e,n.class_error)),r(t),y(t)}function $(t,e,n,a){var i;n.cancel_on_exit&&(c(t)!==ut||"IMG"===t.tagName&&(z(t),m(i=t,function(t){j(t)}),j(i),P(t),v(t,n.class_loading),p(a,-1),r(t),f(n.callback_cancel,t,e,a)))}function q(t,e,n,a){var i,o,r=(o=t,0<=pt.indexOf(c(o)));s(t,"entered"),_(t,n.class_entered),v(t,n.class_exited),i=t,o=a,n.unobserve_entered&&b(i,o),f(n.callback_enter,t,e,a),r||V(t,n,a)}function H(t){return t.use_native&&"loading"in HTMLImageElement.prototype}function B(t,i,o){t.forEach(function(t){return(a=t).isIntersecting||0<a.intersectionRatio?q(t.target,t,i,o):(e=t.target,n=t,a=i,t=o,void(u(e)||(_(e,a.class_exited),$(e,n,a,t),f(a.callback_exit,e,n,t))));var e,n,a})}function J(e,n){var t;et&&!H(e)&&(n._observer=new IntersectionObserver(function(t){B(t,e,n)},{root:(t=e).container===document?null:t.container,rootMargin:t.thresholds||t.threshold+"px"}))}function K(t){return Array.prototype.slice.call(t)}function Q(t){return t.container.querySelectorAll(t.elements_selector)}function W(t){return c(t)===_t}function X(t,e){return e=t||Q(e),K(e).filter(u)}function Y(e,t){var n;(n=Q(e),K(n).filter(W)).forEach(function(t){v(t,e.class_error),r(t)}),t.update()}function t(t,e){var n,a,t=i(t);this._settings=t,this.loadingCount=0,J(t,this),n=t,a=this,Z&&window.addEventListener("online",function(){Y(n,a)}),this.update(e)}var Z="undefined"!=typeof window,tt=Z&&!("onscroll"in window)||"undefined"!=typeof navigator&&/(gle|ing|ro)bot|crawl|spider/i.test(navigator.userAgent),et=Z&&"IntersectionObserver"in window,nt=Z&&"classList"in document.createElement("p"),at=Z&&1<window.devicePixelRatio,it={elements_selector:".lazy",container:tt||Z?document:null,threshold:300,thresholds:null,data_src:"src",data_srcset:"srcset",data_sizes:"sizes",data_bg:"bg",data_bg_hidpi:"bg-hidpi",data_bg_multi:"bg-multi",data_bg_multi_hidpi:"bg-multi-hidpi",data_poster:"poster",class_applied:"applied",class_loading:"litespeed-loading",class_loaded:"litespeed-loaded",class_error:"error",class_entered:"entered",class_exited:"exited",unobserve_completed:!0,unobserve_entered:!1,cancel_on_exit:!0,callback_enter:null,callback_exit:null,callback_applied:null,callback_loading:null,callback_loaded:null,callback_error:null,callback_finish:null,callback_cancel:null,use_native:!1},ot="src",rt="srcset",ct="sizes",lt="poster",st="llOriginalAttrs",ut="loading",dt="loaded",ft="applied",_t="error",vt="native",gt="data-",bt="ll-status",pt=[ut,dt,ft,_t],ht=[ot],mt=[ot,lt],Et=[ot,rt,ct],It={IMG:function(t,e){m(t,function(t){A(t,Et),x(t,e)}),A(t,Et),x(t,e)},IFRAME:function(t,e){A(t,ht),w(t,ot,l(t,e.data_src))},VIDEO:function(t,e){a(t,function(t){A(t,ht),w(t,ot,l(t,e.data_src))}),A(t,mt),w(t,lt,l(t,e.data_poster)),w(t,ot,l(t,e.data_src)),t.load()}},yt=["IMG","IFRAME","VIDEO"],At={IMG:P,IFRAME:function(t){k(t,ht)},VIDEO:function(t){a(t,function(t){k(t,ht)}),k(t,mt),t.load()}},kt=["IMG","IFRAME","VIDEO"];return t.prototype={update:function(t){var e,n,a,i=this._settings,o=X(t,i);{if(h(this,o.length),!tt&&et)return H(i)?(e=i,n=this,o.forEach(function(t){-1!==kt.indexOf(t.tagName)&&F(t,e,n)}),void h(n,0)):(t=this._observer,i=o,t.disconnect(),a=t,void i.forEach(function(t){a.observe(t)}));this.loadAll(o)}},destroy:function(){this._observer&&this._observer.disconnect(),Q(this._settings).forEach(function(t){y(t)}),delete this._observer,delete this._settings,delete this.loadingCount,delete this.toLoadCount},loadAll:function(t){var e=this,n=this._settings;X(t,n).forEach(function(t){b(t,e),V(t,n,e)})},restoreAll:function(){var e=this._settings;Q(e).forEach(function(t){U(t,e)})}},t.load=function(t,e){e=i(e);V(t,e)},t.resetStatus=function(t){r(t)},Z&&function(t,e){if(e)if(e.length)for(var n,a=0;n=e[a];a+=1)o(t,n);else o(t,e)}(t,window.lazyLoadOptions),t});!function(e,t){"use strict";function a(){t.body.classList.add("litespeed_lazyloaded")}function n(){console.log("[LiteSpeed] Start Lazy Load Images"),d=new LazyLoad({elements_selector:"[data-lazyloaded]",callback_finish:a}),o=function(){d.update()},e.MutationObserver&&new MutationObserver(o).observe(t.documentElement,{childList:!0,subtree:!0,attributes:!0})}var d,o;e.addEventListener?e.addEventListener("load",n,!1):e.attachEvent("onload",n)}(window,document);</script>
+
+
+<!-- Page cached by LiteSpeed Cache 6.1 on 2024-03-15 09:28:08 -->
+<!-- QUIC.cloud CCSS loaded ✅ /ccss/0d0178c317797f34a17edc80b5f3437b.css --><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./ejecucion_diaria_py_files/ads(8).html" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none; width: 100% !important; height: 95px !important; bottom: -90px; clear: none !important; float: none !important; left: 0px; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1; overflow: visible !important; padding: 0px !important; position: fixed; right: auto !important; top: auto !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647; background: rgb(250, 250, 250) !important;" data-anchor-status="dismissed" data-ad-status="unfilled" data-anchor-shown="true"><div class="grippy-host"></div><div id="aswift_9_host" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_9" name="aswift_9" style="width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./ejecucion_diaria_py_files/zrt_lookup_fy2021.html" data-google-container-id="a!a" data-load-complete="true"></iframe></div></ins><img class="sgpb-background-image-1753" src="./ejecucion_diaria_py_files/Gray-and-Green-Abstract-Were-Hiring-Social-Media-Officer-LinkedIn-Post.png" style="position: fixed; bottom: -1e+13px;"><div id="sgpb-popup-dialog-main-div-wrapper" class="sgpb-popup-dialog-main-div-wrapper" style="display: none;"><div class="sgpb-popup-dialog-main-div-theme-wrapper-1" style="z-index: 999910; position: fixed; left: 358.5px; top: 45.5px;"><img class="sgpb-popup-close-button-1" alt="Cerrar" title="Cerrar" src="./ejecucion_diaria_py_files/close.png" style="z-index: 999920; position: absolute; float: left; right: 9px; bottom: 9px; width: 21px; cursor: pointer; height: 21px; background-repeat: no-repeat; background-size: cover;"><div id="sgpb-popup-dialog-main-div" class="sgpb-content sgpb-content-1753 sgpb-theme-1-content sg-popup-content sgpb-cursor-pointer" style="box-sizing: content-box; min-width: 120px; max-height: 577px; max-width: 1232px; border-style: solid; border-color: rgb(255, 0, 0); border-width: 0px; background-image: url(&quot;https://pythondiario.com/wp-content/uploads/2023/11/Gray-and-Green-Abstract-Were-Hiring-Social-Media-Officer-LinkedIn-Post.png&quot;); background-size: 100% 100%; background-repeat: no-repeat; background-color: rgb(255, 255, 255); box-shadow: rgb(204, 204, 204) 0px 0px 0px 14px; overflow: auto; width: 577px; height: 577px;"><div style="height:100%;width:100%;overflow:auto;"><div class="sg-popup-builder-content" id="sg-popup-content-wrapper-1753" data-id="1753" data-events="[{&quot;param&quot;:&quot;load&quot;,&quot;value&quot;:&quot;10&quot;,&quot;hiddenOption&quot;:[]}]" data-options="eyJzZ3BiLWltYWdlLXVybCI6Imh0dHBzOlwvXC9weXRob25kaWFyaW8uY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMVwvR3JheS1hbmQtR3JlZW4tQWJzdHJhY3QtV2VyZS1IaXJpbmctU29jaWFsLU1lZGlhLU9mZmljZXItTGlua2VkSW4tUG9zdC5wbmciLCJzZ3BiLXR5cGUiOiJpbWFnZSIsInNncGItaXMtcHJldmlldyI6IjAiLCJzZ3BiLWlzLWFjdGl2ZSI6ImNoZWNrZWQiLCJzZ3BiLWJlaGF2aW9yLWFmdGVyLXNwZWNpYWwtZXZlbnRzIjpbW3sicGFyYW0iOiJzZWxlY3RfZXZlbnQifV1dLCJzZ3BiLXBvcHVwLXotaW5kZXgiOiI5OTk5Iiwic2dwYi1wb3B1cC10aGVtZXMiOiJzZ3BiLXRoZW1lLTEiLCJzZ3BiLWRpc2FibGUtYm9yZGVyIjoib24iLCJzZ3BiLW92ZXJsYXktY29sb3IiOiIiLCJzZ3BiLW92ZXJsYXktb3BhY2l0eSI6IjAuOCIsInNncGItY29udGVudC1jdXN0b20tY2xhc3MiOiJzZy1wb3B1cC1jb250ZW50Iiwic2dwYi1lc2Mta2V5Ijoib24iLCJzZ3BiLWVuYWJsZS1jbG9zZS1idXR0b24iOiJvbiIsInNncGItY2xvc2UtYnV0dG9uLWRlbGF5IjoiMCIsInNncGItY2xvc2UtYnV0dG9uLXBvc2l0aW9uIjoiYm90dG9tUmlnaHQiLCJzZ3BiLWJ1dHRvbi1wb3NpdGlvbi10b3AiOiIiLCJzZ3BiLWJ1dHRvbi1wb3NpdGlvbi1yaWdodCI6IjkiLCJzZ3BiLWJ1dHRvbi1wb3NpdGlvbi1ib3R0b20iOiI5Iiwic2dwYi1idXR0b24tcG9zaXRpb24tbGVmdCI6IiIsInNncGItYnV0dG9uLWltYWdlIjoiIiwic2dwYi1idXR0b24taW1hZ2Utd2lkdGgiOiIyMSIsInNncGItYnV0dG9uLWltYWdlLWhlaWdodCI6IjIxIiwic2dwYi1ib3JkZXItY29sb3IiOiIjMDAwMDAwIiwic2dwYi1ib3JkZXItcmFkaXVzIjoiMCIsInNncGItYm9yZGVyLXJhZGl1cy10eXBlIjoiJSIsInNncGItYnV0dG9uLXRleHQiOiJDZXJyYXIiLCJzZ3BiLW92ZXJsYXktY2xpY2siOiJvbiIsInNncGItcG9wdXAtZGltZW5zaW9uLW1vZGUiOiJyZXNwb25zaXZlTW9kZSIsInNncGItcmVzcG9uc2l2ZS1kaW1lbnNpb24tbWVhc3VyZSI6ImF1dG8iLCJzZ3BiLXdpZHRoIjoiNjQwcHgiLCJzZ3BiLWhlaWdodCI6IjQ4MHB4Iiwic2dwYi1tYXgtd2lkdGgiOiIiLCJzZ3BiLW1heC1oZWlnaHQiOiIiLCJzZ3BiLW1pbi13aWR0aCI6IjEyMHB4Iiwic2dwYi1taW4taGVpZ2h0IjoiIiwic2dwYi1jb250ZW50LWNsaWNrIjoib24iLCJzZ3BiLWNvbnRlbnQtY2xpY2stYmVoYXZpb3IiOiJyZWRpcmVjdCIsInNncGItY2xpY2stcmVkaXJlY3QtdG8tdXJsIjoiaHR0cHM6XC9cL3d3dy5saW5rZWRpbi5jb21cL2NvbXBhbnlcL3dtb25rZXkiLCJzZ3BiLXJlZGlyZWN0LXRvLW5ldy10YWIiOiJvbiIsInNncGItY29weS10by1jbGlwYm9hcmQtdGV4dCI6IiIsInNncGItY29weS10by1jbGlwYm9hcmQtY2xvc2UtcG9wdXAiOiJvbiIsInNncGItY29weS10by1jbGlwYm9hcmQtYWxlcnQiOiJvbiIsInNncGItY29weS10by1jbGlwYm9hcmQtbWVzc2FnZSI6IsKhQ29waWFkbyBhbCBwb3J0YXBhcGVsZXMhIiwic2dwYi1zaG93LXBvcHVwLXNhbWUtdXNlciI6Im9uIiwic2dwYi1zaG93LXBvcHVwLXNhbWUtdXNlci1jb3VudCI6IjEiLCJzZ3BiLXNob3ctcG9wdXAtc2FtZS11c2VyLWV4cGlyeSI6IjUiLCJzZ3BiLW9wZW4tYW5pbWF0aW9uLWVmZmVjdCI6Ik5vIGVmZmVjdCIsInNncGItY2xvc2UtYW5pbWF0aW9uLWVmZmVjdCI6Ik5vIGVmZmVjdCIsInNncGItZW5hYmxlLWNvbnRlbnQtc2Nyb2xsaW5nIjoib24iLCJzZ3BiLXBvcHVwLW9yZGVyIjoiMCIsInNncGItcG9wdXAtZGVsYXkiOiIwIiwic2dwYi1wb3N0LWlkIjoiMTc1MyIsInNncGItZW5hYmxlLXBvcHVwLW92ZXJsYXkiOiJvbiIsInNncGItYnV0dG9uLWltYWdlLWRhdGEiOiIiLCJzZ3BiLWJhY2tncm91bmQtaW1hZ2UtZGF0YSI6IiIsInNncGJDb25kaXRpb25zIjpudWxsfQ==">
+								<div class="sgpb-popup-builder-content-1753 sgpb-popup-builder-content-html"><img data-lazyloaded="1" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" width="1" height="1" class="sgpb-preloaded-image-1753" alt="White Monkey" data-src="https://pythondiario.com/wp-content/uploads/2023/11/Gray-and-Green-Abstract-Were-Hiring-Social-Media-Officer-LinkedIn-Post.png.webp" style="position:absolute;right:9999999999999px;"><noscript><img width="1" height="1" class="sgpb-preloaded-image-1753" alt="White Monkey" src="https://pythondiario.com/wp-content/uploads/2023/11/Gray-and-Green-Abstract-Were-Hiring-Social-Media-Officer-LinkedIn-Post.png.webp" style="position:absolute;right:9999999999999px;"></noscript></div>
+							</div></div></div></div></div></body></html>
